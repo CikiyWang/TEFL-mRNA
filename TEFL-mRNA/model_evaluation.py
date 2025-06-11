@@ -89,8 +89,8 @@ model = keras.models.load_model("/dir/to/save_model_tpe_opt")
 # modify the input sequences file names and output names
 ############################
 
-file_in = "SNVs_FL_example.tsv"
-file_out = "pred_SNVs_FL_example.tsv"
+file_in = sys.argv[1] #"FL_example.tsv"
+file_out = sys.argv[1] #"pred_FL_example.tsv"
 merge_sub = pd.read_csv(file_in, sep = "\t")
 merge_sub = merge_sub.dropna()
 max_lens = 19940
