@@ -26,13 +26,13 @@ conda activate tefl_env
 pip install -r requirements.txt
 ```
 
-**## Usage**
+**Usage**
 **Train the model**
 ```bash
-python experiments/train_model.py
+python model_training_cv.py
 ```
 
 **Predict TE for new mRNAs sequence**
 ```bash
-python predict_te.py --input sequences.fasta
+python model_evaluation.py example/FL_example.tsv example/pred_FL_example.tsv
 ```
