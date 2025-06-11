@@ -26,7 +26,7 @@ conda activate tefl_env
 pip install -r requirements.txt
 ```
 
-**Usage**
+## Usage
 **Train the model**
 ```bash
 python model_training_cv.py
