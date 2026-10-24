@@ -1,33 +1,35 @@
 # Supplementary Figure 4. The correlation between sequence features in translational regulation learned by model
 
-Run all commands from the `FigS4/` directory. Dependencies: R with ggplot2 and ggpubr.
+Run the commands from the `FigS4/` folder. One analysis script writes the binned tables for both panels to `output/`, and one plot script draws them. You need R with ggplot2 and ggpubr.
 
-Shared input:
-- `input/NCBI_RefSeq_GRCh38.mRNA_pc.FL_regions.feature_scores_lengths.tsv`: RefSeq (NM) protein-coding mRNAs with the estimated half-life (`Est_half_life`), CAI (`scoreCAI`), GC ratio (`GcRatio`) and the 5'UTR, CDS, 3'UTR and full-length lengths (nt).
-- `input/pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.pred_0.tsv`: TEFL-mRNA predicted TE (pTE, `pred_0` = P(TE-high)) for the same mRNAs.
+## Input
 
-`analysis/FigS4_input_subset.R` shows how these two tables were extracted from the full feature and prediction tables. You do not need it to reproduce the figure.
+| File in `input/` | Content |
+|---|---|
+| `NCBI_RefSeq_GRCh38.mRNA_pc.FL_regions.feature_scores_lengths.tsv` | RefSeq protein-coding mRNAs with estimated half-life (`Est_half_life`), CAI, GC ratio and the 5′UTR, CDS, 3′UTR and full lengths (nt) |
+| `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.pred_0.tsv` | TEFL-mRNA pTE (`pred_0`) of the same mRNAs |
 
-Both panels are made by one analysis script and one plot script:
+`analysis/FigS4_input_subset.R` shows how these tables were cut from the full feature and prediction tables. You do not need it to reproduce the figure.
+
+## Panels
+
+Both panels use the 65,881 mRNAs shorter than 20 kb, sorted by the feature and grouped into consecutive bins of 20 (3,294 bins). Each point is one bin; R is the Pearson correlation of the bin means and the dashed line is a linear fit with its 95% confidence band.
+
+### Supplementary Fig. 4A
+Correlation between estimated mRNA half-life versus predicted TE.
+
+Output: `output/FigS4A.pdf`, with the bins in `output/FigS4A_binned_half_life_vs_pTE.tsv`.
+
+### Supplementary Fig. 4B
+Correlations between pTE and the length of the 5’UTR, CDS, and 3’UTR. For all scatter plots, points represent bin-averaged (20 mRNAs per bin) values of sequence features (x-axis) and pTE (y-axis); Pearson’s correlation coefficients (R) and p-values are shown.
+
+Lengths are plotted on a log10 axis and R is computed on log10 mean length. Output: `output/FigS4B.pdf`, with the bins in `output/FigS4B_binned_length_vs_pTE.tsv`.
+
+The correlations for both panels are in `output/FigS4_correlations.tsv`. Scripts: `analysis/FigS4_analysis.R`, `plot/FigS4_plot.R`.
+
+## Run
+
 ```bash
 Rscript analysis/FigS4_analysis.R
 Rscript plot/FigS4_plot.R
 ```
-
-## Supplementary Fig. 4A
-Legend: Correlation between estimated mRNA half-life versus predicted TE.
-
-Analysis: Mean pTE against mean estimated mRNA half-life, in bins of 20 mRNAs sorted by half-life (65,881 mRNAs shorter than 20 kb; 3,294 bins). The dashed line is a linear fit with its 95% confidence band; R is the Pearson correlation of the bin means.
-Input: both shared input tables
-Analysis script: `analysis/FigS4_analysis.R` (writes `output/FigS4A_binned_half_life_vs_pTE.tsv`, `output/FigS4_correlations.tsv`)
-Plot script: `plot/FigS4_plot.R`
-Output: `output/FigS4A.pdf`
-
-## Supplementary Fig. 4B
-Legend: Correlations between pTE and the length of the 5’UTR, CDS, and 3’UTR. For all scatter plots, points represent bin-averaged (10 mRNAs per bin) values of sequence features (x-axis) and pTE (y-axis); Pearson’s correlation coefficients (R) and p-values are shown.
-
-Analysis: Mean pTE against mean 5'UTR, CDS and 3'UTR length, binned in the same way and plotted on a log10 length axis. R is the Pearson correlation between mean pTE and log10 mean length.
-Input: both shared input tables
-Analysis script: `analysis/FigS4_analysis.R` (writes `output/FigS4B_binned_length_vs_pTE.tsv`, `output/FigS4_correlations.tsv`)
-Plot script: `plot/FigS4_plot.R`
-Output: `output/FigS4B.pdf`

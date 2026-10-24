@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Fig. 6A: median delta pTE of synonymous SNVs (|delta pTE| > 0.02) per codon substitution and
+# Fig. 6A: median delta pTE of synonymous ExAC SNVs (|delta pTE| > 0.02) per codon substitution and
 # cell line (cell-line TE models). Writes the codon substitution x cell line matrix with the
 # codon-usage direction (more/less optimal ALT codon) and amino acid of each substitution.
 

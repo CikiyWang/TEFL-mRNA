@@ -1,68 +1,37 @@
 # Supplementary Figure 10. Sequence composition and positional bias on predicted 5’UTR variant effects
 
-Effect of 5'UTR sequence architecture on the predicted translational-efficiency
-change (ΔpTE = variant − reference) of common 5'UTR variants. Variants are dbSNP
-common variants (CAF 0.1–0.9) with ClinVar and GWAS Catalog entries removed;
-n = 27,156 variant–transcript pairs in both panels.
+Run the commands from the `FigS10/` folder. One analysis script writes the source data for both panels to `output/`, and one plot script draws them. You need R with data.table, ggplot2 and scales.
 
-In both panels the grey points are individual variant–transcript pairs, the orange
-points are the median signed ΔpTE in each of 25 equal-count x bins joined by a line,
-and the shaded band is the 5–95% range of signed ΔpTE within the bin (bins with
-fewer than 100 points are dropped). The Spearman ρ shown in each panel is computed
-against the **absolute** effect size |ΔpTE|, not against the signed ΔpTE plotted on
-the y axis: these covariates act on the spread of ΔpTE, not on its centre.
+The script uses dbSNP common 5′UTR variants (allele frequency 0.1 to 0.9) after removing ClinVar and GWAS Catalog entries: 27,156 variant–transcript pairs in both panels. ΔpTE is the variant minus the reference prediction.
 
-All commands are run from the `FigS10/` directory.
+## Input
 
-## Supplementary Fig. 10A
+| File in `input/` | Content |
+|---|---|
+| `pred_dbSNP-common_CAF_0.1_0.9.5_prime_UTR_variant.rm_clinvar_gwas.sel_cols.tsv` | ΔpTE of the variant–transcript pairs |
+| `utr5_variant_covariates_pm25nt.tsv` | 5′UTR length, distance to the start codon and reference GC fraction within ±25 nt of each variant |
 
-Legend: Correlation between predicted variant effects and local GC content. ΔpTE for GWAS-associated 5’UTR variants plotted against local GC content within ±25 nt of the variant position.
+The covariate table comes from a 250 MB sequence table that is not included; `Rscript analysis/FigS10_prepare_covariates.R <sequence_table.tsv>` rebuilds it.
 
-Analysis: ΔpTE against local GC content in a ±25 nt window centred on the variant,
-computed on the reference allele and extending into the CDS for variants within
-25 nt of the start codon. Local GC is essentially uninformative about variant
-effect size (ρ = −0.007).
-Input: `input/utr5_variant_covariates_pm25nt.tsv`, `input/pred_dbSNP-common_CAF_0.1_0.9.5_prime_UTR_variant.rm_clinvar_gwas.sel_cols.tsv`
-Analysis script: `analysis/FigS10_analysis.R`
-Plot script: `plot/FigS10_plot.R`
-Output: `output/FigS10A.pdf`
-Run:
-```
+## Panels
+
+In both panels the grey points are single pairs and the orange points are the median signed ΔpTE in 25 equal-count bins (bins with fewer than 100 points dropped), with the 5 to 95% range shaded. The Spearman ρ is computed against |ΔpTE|, not the signed values on the y axis.
+
+### Supplementary Fig. 10A
+Correlation between predicted variant effects and local GC content. ΔpTE for GWAS-associated 5’UTR variants plotted against local GC content within ±25 nt of the variant position.
+
+Local GC is computed on the reference allele and extends into the CDS for variants within 25 nt of the start codon (ρ = −0.007). Output: `output/FigS10A.pdf`.
+
+### Supplementary Fig. 10B
+Correlation between predicted variant effects and start-codon distance. ΔpTE for the same variants plotted against distance to the start codon. Orange points connected by a line indicate the median signed ΔpTE across 25 equal-count bins, with shaded bands representing the 5th-95th percentile range within each bin (bins with <100 variants excluded). ρ is Spearman’s correlation between the corresponding covariate and absolute effect size (|ΔpTE|).
+
+Variants closer to the start codon have a wider spread of ΔpTE (ρ = −0.107). Output: `output/FigS10B.pdf`.
+
+Scripts: `analysis/FigS10_analysis.R`, `plot/FigS10_plot.R`. The analysis writes the points to `output/FigS10_source_data.tsv`, the bins to `output/FigS10_binned_summary.tsv` and the correlations to `output/FigS10_statistics.csv`.
+
+## Run
+
+```bash
 Rscript analysis/FigS10_analysis.R
 Rscript plot/FigS10_plot.R
 ```
-
-## Supplementary Fig. 10B
-
-Legend: Correlation between predicted variant effects and start-codon distance. ΔpTE for the same variants plotted against distance to the start codon. Orange points connected by a line indicate the median signed ΔpTE across 25 equal-count bins, with shaded bands representing the 5th-95th percentile range within each bin (bins with <100 variants excluded). ρ is Spearman’s correlation between the corresponding covariate and absolute effect size (|ΔpTE|).
-
-Analysis: ΔpTE against the distance from the variant to the start codon. Variants
-closer to the start codon show a wider spread of ΔpTE (ρ = −0.107).
-Input: `input/utr5_variant_covariates_pm25nt.tsv`, `input/pred_dbSNP-common_CAF_0.1_0.9.5_prime_UTR_variant.rm_clinvar_gwas.sel_cols.tsv`
-Analysis script: `analysis/FigS10_analysis.R`
-Plot script: `plot/FigS10_plot.R`
-Output: `output/FigS10B.pdf`
-Run:
-```
-Rscript analysis/FigS10_analysis.R
-Rscript plot/FigS10_plot.R
-```
-
-## Files
-
-Both panels are produced by one analysis script and one plot script. The analysis
-step writes the per-panel source data (`output/FigS10_source_data.tsv`), the binned
-summaries (`output/FigS10_binned_summary.tsv`) and the correlation statistics
-(`output/FigS10_statistics.csv`); the plot step reads those tables only.
-
-`input/utr5_variant_covariates_pm25nt.tsv` holds the per-variant 5'UTR length,
-start-codon distance and ±25 nt reference GC fraction. It is supplied directly
-because it derives from a ~250 MB sequence/prediction table that is too large to
-distribute here. `analysis/FigS10_prepare_covariates.R` regenerates it from that
-table if needed:
-
-```
-Rscript analysis/FigS10_prepare_covariates.R <sequence_table.tsv>
-```
-
-Dependencies: R with `data.table`, `ggplot2` and `scales`.

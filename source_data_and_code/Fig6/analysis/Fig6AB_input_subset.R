@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Builds the Fig. 6A-B inputs from the per-cell-line gnomAD exome CDS SNV tables (delta pTE of
+# Builds the Fig. 6A-B inputs from the per-cell-line ExAC CDS SNV tables (delta pTE of
 # the cell-line TE models, TE_q25q75). Not needed to reproduce the figure; documents how input/
 # was made.
 #
