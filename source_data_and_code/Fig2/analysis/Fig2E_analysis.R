@@ -1,9 +1,10 @@
 #!/usr/bin/env Rscript
 # Fig. 2E: baseline pTE control for the paired uAUG effect. For each annotated uAUG-creating 5'UTR
 # SNV-transcript pair, delta pTE = pTE(ALT) - pTE(REF) of the same transcript (all annotated pairs,
-# as in the published panel; Fig. 2D keeps only pairs whose ALT allele forms an ATG). Per bin of reference-allele pTE and |delta pTE| cutoff (all pairs, > 0.05,
-# 0.10, 0.15, 0.20): share of pairs with delta pTE < 0, 95% Clopper-Pearson CI, and the two-sided
-# exact sign test against 50% (log10 P, since P underflows double precision for the larger groups).
+# as in the published panel; Fig. 2D keeps only pairs whose ALT allele forms an ATG). Per bin of
+# reference-allele pTE and |delta pTE| cutoff (all pairs, > 0.05, 0.10, 0.15, 0.20): share of pairs
+# with delta pTE < 0, 95% Clopper-Pearson CI, and the two-sided exact sign test against 50% (log10 P,
+# since P underflows double precision for the larger groups).
 
 suppressPackageStartupMessages(library(data.table))
 

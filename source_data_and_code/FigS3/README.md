@@ -1,4 +1,6 @@
-# Figure S3
+# Supplementary Figure 3. Sensitivity analysis of TE quantification and classification
+
+Legend: TPM-ratio TE is the per-sample RPF/RNA TPM ratio averaged across samples, as used throughout the manuscript. Compositional TE is the per-sample centered-log-ratio (CLR) difference CLR(RPF) - CLR(RNA), averaged across samples, with CLR geometric means taken over filtered mRNAs. The consensus TE class is defined using per-sample TE > 1 as high and TE < 0.25 as low, with classes assigned when the criterion is met in >75% of samples.
 
 Run all commands from the `FigS3/` directory.
 
@@ -24,7 +26,9 @@ estimates, classes and quartiles), `output/FigS3A-F_statistics.tsv` (correlation
 class concordance) and `output/FigS3EF_quartile_summary.tsv` (quartile composition and
 chi-square tests).
 
-## Fig. S3A
+## Supplementary Fig. 3A
+Legend: Correlation between compositional and TPM-ratio TE. The scatter plot shows the comparison of continuous compositional and TPM-ratio TE values.
+
 Analysis: Compositional TE, defined as the per-sample centred-log-ratio difference
 CLR(RPF) - CLR(RNA) averaged across samples, compared with the TPM-ratio TE used for
 training. Spearman correlation over the 1,979 training mRNAs.
@@ -33,7 +37,9 @@ Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3A.pdf`
 
-## Fig. S3B
+## Supplementary Fig. 3B
+Legend: Concordance between compositional and consensus TE classes. Rows represent the consensus TE classes; columns represent compositional TE ranked and classified of matching sizes.
+
 Analysis: Concordance between the consensus TE classes and the compositional TE
 partitioned by rank into classes of the same sizes. The consensus thresholds are
 defined on the ratio scale and have no equivalent on a centred log-ratio, so the
@@ -43,8 +49,10 @@ Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3B.pdf`
 
-## Fig. S3C
-Analysis: As Fig. S3A for the regression form of the compositional estimate, in which
+## Supplementary Fig. 3C
+Legend: Correlation between regression-residual and TPM-ratio TE. Regression-residual TE was calculated by regressing CLR<sub>RPF</sub> on CLR<sub>RNA</sub> within each sample using ordinary least squares and taking the residual as TE. The scatter plot shows the comparison of continuous regression-residual and TPM-ratio TE values.
+
+Analysis: As Supplementary Fig. 3A for the regression form of the compositional estimate, in which
 CLR(RPF) is regressed on CLR(RNA) within each sample by ordinary least squares and the
 residual is averaged across samples.
 Input: shared inputs above
@@ -52,14 +60,18 @@ Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3C.pdf`
 
-## Fig. S3D
-Analysis: As Fig. S3B for the regression-residual TE.
+## Supplementary Fig. 3D
+Legend: Concordance between regression-residual and consensus TE classes. Columns represent regression-residual TE ranked and classified of matching sizes.
+
+Analysis: As Supplementary Fig. 3B for the regression-residual TE.
 Input: shared inputs above
 Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3D.pdf`
 
-## Fig. S3E
+## Supplementary Fig. 3E
+Legend: Distribution of consensus TE classes across RNA abundance quartiles.
+
 Analysis: Composition of the consensus TE classes across quartiles of mean RNA-seq
 abundance, testing class-by-quartile independence with a chi-square test.
 Input: shared inputs above
@@ -67,15 +79,19 @@ Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3E.pdf`
 
-## Fig. S3F
-Analysis: As Fig. S3E, with transcripts stratified by mean RNA-seq read depth over the
+## Supplementary Fig. 3F
+Legend: Correlation between TPM-ratio-based TE and RNA abundance. TE plotted against mean RNA abundance; dashed and dotted lines indicate the TE = 1 and TE = 0.25 class cutoffs, respectively.
+
+Analysis: As Supplementary Fig. 3E, with transcripts stratified by mean RNA-seq read depth over the
 coding region.
 Input: shared inputs above, plus `input/GSE19480_isoform_cds_Count.RNA.txt`
 Analysis script: `analysis/FigS3A-F_analysis.py`
 Plot script: `plot/FigS3A-F_plot.py`
 Output: `output/FigS3F.pdf`
 
-## Fig. S3G
+## Supplementary Fig. 3G
+Legend: Effect of consensus filtering on TE prediction performance. Area under the ROC curve (AUC) for discriminating TE-high mRNAs from other classes using TEFL-mRNA trained on consensus mRNAs only (Filtered) or on mRNAs without the consensus requirement, with classes assigned based on mean TE across individuals (Unfiltered). Both models were trained using identical 10-fold cross-validation splits, architectures, and hyperparameters, and evaluated on the same held-out consensus mRNAs. p-value = 0.02, two-sided Wilcoxon signed-rank test across paired folds. Error bars indicate mean ± s.d.
+
 Analysis: AUC for discriminating TE-high mRNAs from all other mRNAs by TEFL-mRNA trained on the consensus mRNAs (Filtered) or on all 9,714 mRNAs (Unfiltered). The two models share the ten cross-validation partitions and are scored on the same 1,754 held-out consensus mRNAs against their consensus class. The P value is from a two-sided Wilcoxon signed-rank test on the ten paired per-fold AUCs.
 Input: held-out predictions of each test fold (`pred_0` = P(TE-high); `in_filtered` = consensus mRNA; `published_Class` = consensus class)
 - `input/FL_regions.filter_cor0.7_l0.25_h1.TPE_opt.same_split_as_nofilter/Model_Prediction.fold_{1..10}.tsv` (Filtered)

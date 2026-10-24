@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 # Fig. 2E: % of uAUG-creating variant-transcript pairs with delta pTE < 0 in each bin of
 # reference-allele pTE, for all pairs and for |delta pTE| > 0.05, 0.10, 0.15, 0.20. Error bars:
-# 95% Clopper-Pearson CI. Subtitle: exact sign test against 50%, largest P over the 25 bars.
+# 95% Clopper-Pearson CI. Labels and legend as in the published panel.
 # Set in Arial through the native macOS PDF device (cairo_pdf elsewhere).
 
 suppressPackageStartupMessages({
@@ -20,32 +20,18 @@ B_CUTS     <- c(0, 0.05, 0.10, 0.15, 0.20)
 CUT_LABS   <- c("All", "> 0.05", "> 0.10", "> 0.15", "> 0.20")
 
 COL_NEG <- "#3A4C71"
-AXIS_T  <- 13; AXIS_X <- 12; SUB <- 10.5
+AXIS_T  <- 13; AXIS_X <- 12
 theme_fig <- function(aspect) theme_classic(base_size = AXIS_T, base_family = "Arial") +
   theme(aspect.ratio  = aspect,
         axis.title    = element_text(size = AXIS_T),
         axis.text     = element_text(colour = "black", size = AXIS_X),
         axis.line     = element_line(linewidth = 0.6),
         axis.ticks    = element_line(linewidth = 0.6, colour = "black"),
-        plot.title    = element_text(face = "bold", size = AXIS_T, hjust = 0.5),
-        plot.subtitle = element_text(size = SUB, colour = "grey25", hjust = 0.5,
-                                     margin = margin(t = 3, b = 9)),
         plot.margin   = margin(6, 10, 6, 6))
 pdf_dev <- function(filename, width, height, ...)
   if (capabilities("aqua")) grDevices::quartz(file = filename, type = "pdf", width = width,
                                               height = height, family = "Arial") else
     grDevices::cairo_pdf(filename, width = width, height = height, family = "Arial")
-# log10 P -> plotmath: "P < 2.2 x 10^-16" below R's usual floor, else the value
-p_expr <- function(log10_p) vapply(log10_p, function(l) {
-  if (l < log10(2.2e-16)) return("italic(P) < 2.2 %*% 10^-16")
-  if (l > -3) return(sprintf('italic(P) == "%.3f"', 10^l))
-  e <- floor(l); m <- round(10^(l - e), 1)
-  if (m >= 10) { m <- 1; e <- e + 1 }
-  sprintf('italic(P) == "%.1f" %%*%% 10^%d', m, e)
-}, character(1))
-# one subtitle, quoting the largest P (as P <= max) so it holds for every bar
-p_subtitle <- function(test, log10_p)
-  parse(text = sprintf('"%s: "*%s', test, sub("==", "<=", p_expr(max(log10_p)), fixed = TRUE)))
 
 bin_by_cutoff <- fread(file.path(OUTPUT_DIR, "Fig2E_source_data.tsv"))
 COL_CUT <- setNames(colorRampPalette(c("#B4BDD0", COL_NEG))(length(CUT_LABS)), CUT_LABS)
@@ -68,12 +54,10 @@ p <- ggplot(b_dat, aes(ref_bin, pct_neg, fill = cut)) +
   scale_y_continuous(breaks = seq(0, 100, 25), expand = c(0, 0)) +
   coord_cartesian(ylim = c(0, 118), clip = "off") +
   guides(y = guide_axis(cap = "upper"),
-         fill = guide_legend(nrow = 1, title.position = "left")) +
-  labs(x = "Reference allele pTE (transcript baseline)", y = "Pairs with ΔpTE < 0 (%)",
-       title = "Baseline pTE control",
-       subtitle = p_subtitle("Sign test vs 50%, every bar", b_dat$log10_p)) +
+         fill = guide_legend(ncol = 2, byrow = TRUE, title.position = "top")) +
+  labs(x = "Reference allele pTE (transcript baseline)", y = "% with ΔpTE < 0") +
   theme_fig(aspect = 0.7) +
-  theme(legend.position = "bottom", legend.title = element_text(size = SUB),
-        legend.text = element_text(size = SUB), legend.key.size = unit(3.5, "mm"),
-        legend.margin = margin(t = 2))
+  theme(legend.position = "inside", legend.position.inside = c(0.01, 1.04), legend.justification = c(0, 1),
+        legend.background = element_blank(), legend.title = element_text(size = AXIS_X),
+        legend.text = element_text(size = AXIS_X), legend.key.size = unit(4.5, "mm"))
 ggsave(file.path(OUTPUT_DIR, "Fig2E.pdf"), p, width = 135, height = 118, units = "mm", device = pdf_dev)

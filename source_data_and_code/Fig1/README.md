@@ -1,4 +1,4 @@
-# Figure 1
+# Figure 1. Construction and evaluation of the TEFL-mRNA model
 
 All commands are run from the `Fig1/` directory. Requires R (tested with 4.4.2) with `data.table`,
 `dplyr`, `ggplot2`, `ggpubr`, `ggsci`, `ggh4x`, `patchwork`, `pROC` and `MLmetrics`. Each analysis
@@ -15,7 +15,19 @@ The input data are not included. Place these files in `input/` before running:
 | `PMD22221297_B_naive_high_confidence.tsv` | miRNAs expressed in naive B cells (PMID 22221297) | 1F |
 | `uORF_dump_uORFdb.hs.tsv` | human uORFs from uORFdb | 1G |
 
+## Fig. 1A
+Legend: Conceptual overview of translation-efficiency (TE)-altering genetic variants and translational-state definition. Genetic variants located in the 5’UTR, CDS, and 3’UTR may influence translational regulatory mechanisms, including upstream open reading frames (uORFs), miRNA-mediated regulation, codon usage, and RNA secondary structure, thereby altering ribosome occupancy and protein abundance without substantial changes in mRNA abundance. Translation efficiency (TE) was quantified from matched ribosome profiling and RNA-seq data as TPM<sub>Ribo-seq</sub> /TPM<sub>RNA-seq</sub>. Because continuous TE measurements exhibit substantial inter-individual variability, transcripts were grouped into robust consensus translational states, defined as TE-low, TE-intermediate, and TE-high categories.
+
+Schematic; no code.
+
+## Fig. 1B
+Legend: Architecture of the TEFL-mRNA classification model. Full-length mRNA sequences were one-hot encoded, with a fifth channel labeling RNA regions (5’UTR, CDS, and 3’UTR). Encoded sequences were fed into convolutional and bidirectional long short-term memory (BiLSTM) layers, followed by fully connected layers and a softmax output layer to predict transcript translational states and TE-high probabilities (pTE).
+
+Schematic of the model; the model code is in `TEFL-mRNA/` at the repository root.
+
 ## Fig. 1C
+Legend: Model performance metrics (AUC, PRAUC, Precision, Recall, Accuracy, and F1-score) from 10-fold cross-validation; each point represents one fold.
+
 Analysis: AUC, PRAUC, precision, recall, accuracy and F1 score of the TE-high class (pTE ≥ 0.5) in each
 of the 10 cross-validation folds; bars show the mean and error bars the SD.
 Input: `input/Model_Prediction.fold_1.tsv` … `input/Model_Prediction.fold_10.tsv`
@@ -30,6 +42,8 @@ Rscript plot/Fig1C_plot.R
 ```
 
 ## Fig. 1D
+Legend: Receiver operating characteristic (ROC) curves for the 10 folds; the x-axis shows specificity; the y-axis shows sensitivity.
+
 Analysis: ROC curves and AUC of the TE-high class in each cross-validation fold.
 Input: `input/Model_Prediction.fold_1.tsv` … `input/Model_Prediction.fold_10.tsv`
 Analysis script: `analysis/Fig1CD_analysis.R`
@@ -43,6 +57,8 @@ Rscript plot/Fig1D_plot.R
 ```
 
 ## Fig. 1E
+Legend: Relationship between predicted pTE categories and actual TE values. The x-axis shows predicted score categories; the y-axis shows log<sub>10</sub>(TE+1) across samples to accommodate zero values.
+
 Analysis: Measured TE, log10(TE + 1), of mRNAs in 0.1-wide pTE bins, with the bin medians and Spearman's
 rho between pTE and TE over all mRNAs. The y axis is broken between 0.78 and 2.45; 37 mRNAs fall in the
 break.
@@ -58,6 +74,8 @@ Rscript plot/Fig1E_plot.R
 ```
 
 ## Fig. 1F
+Legend: Distribution of pTE across mRNAs with or without (F) 3’UTR miRNA binding sites or (G) 5’UTR upstream open reading frame (uORF). The y-axis shows the fraction of mRNAs in each pTE category. P-value from Fisher’s Exact test indicates significant shifts in pTE distributions.
+
 Analysis: Distribution over 0.1-wide pTE bins of mRNAs with and without a 3′UTR binding site (miRWalk,
 binding probability 1) of a miRNA expressed in naive B cells, with Fisher's exact tests for enrichment of
 pTE above each cutoff.
@@ -73,6 +91,8 @@ Rscript plot/Fig1F_plot.R
 ```
 
 ## Fig. 1G
+Legend: Distribution of pTE across mRNAs with or without (F) 3’UTR miRNA binding sites or (G) 5’UTR upstream open reading frame (uORF). The y-axis shows the fraction of mRNAs in each pTE category. P-value from Fisher’s Exact test indicates significant shifts in pTE distributions.
+
 Analysis: Distribution over 0.1-wide pTE bins of mRNAs with and without a strong uORF in uORFdb, with
 Fisher's exact tests for enrichment of pTE above each cutoff.
 Input: `input/pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv`, `input/uORF_dump_uORFdb.hs.tsv`

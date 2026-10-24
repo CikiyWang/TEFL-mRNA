@@ -1,13 +1,19 @@
-# Fig. S7D — source data and code
+# Supplementary Figure 7. Potential mechanisms of the validated TE-altering 5’ UTR variants
 
-Change in base-pairing at the variant base for the five validated 5'UTR variants
-that gain no upstream AUG. Previously panel **c** of the four-panel mechanism
-supplement; renumbered here as **Fig. S7D**.
+This folder holds the code for panel D. Panels A–C have no script here.
+
+Legend (A): Sequence and secondary structure of six validated 5’UTR variants. Complete 5’UTR sequences of the six variants validated in Fig. 2G. For each transcript, the full 5’UTR is shown from 5′ to 3′, from the transcription start site to the base before the CDS AUG. The variant is boxed and colored according to its predicted effect on TE (ΔpTE) (red, increases TE; blue, decreases TE). The dot-bracket notation indicates the minimum free energy (MFE) secondary structure of the 5’UTR with the alternative allele (ViennaRNA RNAfold). Upstream AUGs (uAUGs) are marked. Headers indicate the RefSeq accession, HGVS notation, 5’UTR length, gnomAD v4 allele frequency, and rsID. Sequences are shown as RNA.
+
+Legend (B): Creation of an overlapping uORF by the HLA-G variant. HLA-G c.-44U>A creates an AUG at 5’UTR position 29; the resulting 15-codon upstream open reading frame (uORF) is out of frame with the CDS, and its stop codon overlaps the main start codon, potentially inhibiting reinitiation.
+
+Legend (C): Formation of a cap-proximal hairpin by the H3C4 variant. Diagram of MFE-predicted base pairs for the H3C4 5’UTR. The c.-25A>C variant creates a cap-proximal hairpin in a largely unstructured 5’UTR (ΔG changes from -0.1 to -3.3 kcal/mol); the triangle marks the variant.
+
+Legend (D): Changes in local RNA base-pairing probability induced by 5’UTR variants. Probability that the variant is unpaired in the 5’UTR structure (ViennaRNA), comparing the reference (open circles) and alternative (filled circles) alleles. PIK3C3, H3C4, and HLA-G show substantial changes in local base-pairing probability.
 
 ## Contents
 
 ```
-FigS7D/
+FigS7/
 ├── README.md
 ├── source_data/
 │   ├── variants_5utr_sequences.json   Input: reference and variant 5'UTR, CDS, 3'UTR
@@ -25,7 +31,7 @@ FigS7D/
 
 ## Running
 
-Run from the package root (`FigS7D/`); both scripts resolve paths relative to it:
+Run from the `FigS7/` directory; both scripts resolve paths relative to it:
 
 ```bash
 python scripts/analysis_FigS7D.py     # source_data/variants_5utr_sequences.json
@@ -71,7 +77,7 @@ is the sequence actually present upstream of the assayed ORF; folding the 5'UTR
 together with its native CDS would not correspond to the assayed molecule.
 
 *HLA-G* is excluded from this panel. Its mechanism is upstream-ORF creation
-(Fig. S7A), and the large accessibility change at its variant base is incidental
+(Supplementary Fig. 7B), and the large accessibility change at its variant base is incidental
 to that mechanism rather than the cause of the effect. The panel tests secondary
 structure as a mechanism for the five variants in which no upstream AUG is gained.
 *HLA-G*'s values are retained in the per-variant supplementary table.

@@ -1,4 +1,4 @@
-# Figure S9
+# Supplementary Figure 9. Coding-variant effects on translation efficiency in relation to nucleotide composition and amino-acid properties
 
 Commands run from the `FigS9/` directory. Panels S9A–S9C share one analysis script and one
 plot script. The analysis script writes the source-data tables into `input/`; the plot script
@@ -11,7 +11,9 @@ scored on each RefSeq isoform it falls in. Substitutions are directed (reference
 at the variant position and written with U for thymine, giving twelve classes. Effects are in
 units of 10⁻³ ΔpTE.
 
-## Fig. S9A
+## Supplementary Fig. 9A
+
+Legend: Nucleotide substitution-specific effects on predicted TE. Mean ΔpTE for the 12 nucleotide substitutions among synonymous (n = 16,512,884) and missense (n = 18,656,909) gnomAD v4.0 SNVs. Filled and open circles indicate unadjusted and covariate-adjusted effects, respectively.
 
 Analysis: Mean ΔpTE for each of the twelve directed nucleotide substitutions in synonymous and
 missense variants, before and after adjustment for local GC content, transcript-wide GC content,
@@ -28,7 +30,9 @@ Rscript analysis/FigS9ABC_analysis.R
 Rscript plot/FigS9ABC_plot.R
 ```
 
-## Fig. S9B
+## Supplementary Fig. 9B
+
+Legend: Substitution-specific effects across transcript GC content. Mean ΔpTE for each nucleotide substitution across deciles of transcript-wide GC content.
 
 Analysis: Unadjusted mean ΔpTE for each substitution within deciles of transcript-wide GC
 content, spanning GC 0.31 to 0.77. No model is fitted; the decile stratification is itself the
@@ -44,7 +48,9 @@ Rscript analysis/FigS9ABC_analysis.R
 Rscript plot/FigS9ABC_plot.R
 ```
 
-## Fig. S9C
+## Supplementary Fig. 9C
+
+Legend: Variance in predicted variant effects explained by substitution identity and GC content. Proportion of variance in ΔpTE (R²) explained by substitution type, GC content, or the full covariate model.
 
 Analysis: Variance of ΔpTE explained by substitution type alone, by local and transcript-wide
 GC content alone, and by the full covariate set, from three nested ordinary-least-squares fits.
@@ -59,7 +65,9 @@ Rscript analysis/FigS9ABC_analysis.R
 Rscript plot/FigS9ABC_plot.R
 ```
 
-## Fig. S9D
+## Supplementary Fig. 9D
+
+Legend: Correlation between predicted variant effects and codon stability coefficients (D) and amino-acid stability coefficients (E). Scatter plot of ΔpTE versus changes in codon stability coefficients (ΔCSC) and amino-acid stability coefficients (ΔAASC). The stability coefficients were obtained from Forrest et al. (2020, Supplementary Table 2), based on HeLa mRNA half-life measurements. Each data point represents a codon pair (D) or amino-acid pair (E). The y-axis shows the mean ΔpTE, rescaled by the standard deviation (SD) across cell lines. The x-axis represents the change in stability coefficient between alternative and reference alleles (alternative - reference). Filled points indicate GC-neutral subsets: codon pairs with unchanged G+C content (D) or amino-acid pairs with similar GC content (|ΔGC| ≤ 0.05; E). Lines indicate linear regression fits across all pairs; Spearman’s ρ is calculated for all pairs and the GC-neutral subsets.
 
 Analysis: Mean ΔpTE per synonymous codon substitution pair in HeLa, against the change in codon
 stability coefficient (ΔCSC, alternate − reference; Forrest et al. 2020). Filled points are the
@@ -76,7 +84,9 @@ Run:
 Rscript plot/FigS9DE_plot.R
 ```
 
-## Fig. S9E
+## Supplementary Fig. 9E
+
+Legend: Correlation between predicted variant effects and codon stability coefficients (D) and amino-acid stability coefficients (E). Scatter plot of ΔpTE versus changes in codon stability coefficients (ΔCSC) and amino-acid stability coefficients (ΔAASC). The stability coefficients were obtained from Forrest et al. (2020, Supplementary Table 2), based on HeLa mRNA half-life measurements. Each data point represents a codon pair (D) or amino-acid pair (E). The y-axis shows the mean ΔpTE, rescaled by the standard deviation (SD) across cell lines. The x-axis represents the change in stability coefficient between alternative and reference alleles (alternative - reference). Filled points indicate GC-neutral subsets: codon pairs with unchanged G+C content (D) or amino-acid pairs with similar GC content (|ΔGC| ≤ 0.05; E). Lines indicate linear regression fits across all pairs; Spearman’s ρ is calculated for all pairs and the GC-neutral subsets.
 
 Analysis: Mean ΔpTE per amino-acid substitution in HeLa, against the change in amino-acid
 stability coefficient (ΔAASC, alternate − reference; Forrest et al. 2020). Filled points are the

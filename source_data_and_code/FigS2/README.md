@@ -1,4 +1,4 @@
-# Figure S2
+# Supplementary Figure 2. Quality control of measured TE across the 47 LCL individuals and variation in TE class assignments across individuals
 
 Quality control of translation efficiency (TE) measured across 47 lymphoblastoid
 cell lines (LCLs), and comparison with published LCL TE.
@@ -9,7 +9,9 @@ plot script renders the PDF from that table.
 
 Dependencies: R (>= 4.0) with `ggplot2`; `cairo_pdf` support for PDF output.
 
-## Fig. S2A
+## Supplementary Fig. 2A
+
+Legend: Pairwise correlation of transcript-level TE across individuals. Pairwise Spearman’s correlations of transcript-level TE profiles among the 47 individuals across 9,745 transcripts. Samples were ordered by hierarchical clustering.
 
 Analysis: Pairwise Spearman correlation of transcript-level TE profiles between
 the 47 individuals, over 9,745 transcripts; samples ordered by hierarchical
@@ -27,7 +29,9 @@ Rscript analysis/FigS2A_analysis.R
 Rscript plot/FigS2A_plot.R
 ```
 
-## Fig. S2B
+## Supplementary Fig. 2B
+
+Legend: Consistency of TE class assignments across individuals. The histogram shows the distribution across transcripts of the percentage of individuals assigning each transcript to its most frequent TE class (dominant class).
 
 Analysis: Per-transcript consistency of the TE class across individuals. Classes
 follow the published label definition (TE-low 0 < TE < 0.25, TE-intermediate
@@ -47,7 +51,9 @@ Rscript analysis/FigS2B_analysis.R
 Rscript plot/FigS2B_plot.R
 ```
 
-## Fig. S2C
+## Supplementary Fig. 2C
+
+Legend: Comparison of measured TE with RiboNN LCL TE. Mean TE across the 47 individuals (log₁₀ scale) versus RiboNN LCL TE (Zheng et al., 2025) for the 1,370 matched transcripts in the consensus TE label subset. Lines indicate least-squares fits; ρ, Spearman’s correlation coefficient.
 
 Analysis: Mean TE across the 47 individuals compared with the LCL TE compiled by
 Zheng et al. for RiboNN. RefSeq and Ensembl accessions do not cross-map, so

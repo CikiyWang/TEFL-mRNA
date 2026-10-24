@@ -1,4 +1,4 @@
-# Figure S10
+# Supplementary Figure 10. Sequence composition and positional bias on predicted 5’UTR variant effects
 
 Effect of 5'UTR sequence architecture on the predicted translational-efficiency
 change (ΔpTE = variant − reference) of common 5'UTR variants. Variants are dbSNP
@@ -14,7 +14,9 @@ the y axis: these covariates act on the spread of ΔpTE, not on its centre.
 
 All commands are run from the `FigS10/` directory.
 
-## Fig. S10A
+## Supplementary Fig. 10A
+
+Legend: Correlation between predicted variant effects and local GC content. ΔpTE for GWAS-associated 5’UTR variants plotted against local GC content within ±25 nt of the variant position.
 
 Analysis: ΔpTE against local GC content in a ±25 nt window centred on the variant,
 computed on the reference allele and extending into the CDS for variants within
@@ -30,7 +32,9 @@ Rscript analysis/FigS10_analysis.R
 Rscript plot/FigS10_plot.R
 ```
 
-## Fig. S10B
+## Supplementary Fig. 10B
+
+Legend: Correlation between predicted variant effects and start-codon distance. ΔpTE for the same variants plotted against distance to the start codon. Orange points connected by a line indicate the median signed ΔpTE across 25 equal-count bins, with shaded bands representing the 5th-95th percentile range within each bin (bins with <100 variants excluded). ρ is Spearman’s correlation between the corresponding covariate and absolute effect size (|ΔpTE|).
 
 Analysis: ΔpTE against the distance from the variant to the start codon. Variants
 closer to the start codon show a wider spread of ΔpTE (ρ = −0.107).
