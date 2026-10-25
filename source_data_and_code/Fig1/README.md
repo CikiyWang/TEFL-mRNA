@@ -4,16 +4,19 @@ Run the commands from the `Fig1/` folder. Each analysis script writes source dat
 
 ## Input
 
-The input files are not included yet. Put them in `input/`:
+The two uORF tables for 1G are in `input/`. Put the other files there before running:
 
 | File | Content | Panels |
 |---|---|---|
 | `Model_Prediction.fold_1.tsv` … `Model_Prediction.fold_10.tsv` | held-out predictions of the LCL TE classifier in each cross-validation fold (`true_y_bi_0`, TE-high label; `pred_0`, pTE) | 1C, 1D |
 | `pTE_vs_measured_TE.published_panel.tsv` | pTE and measured TE (median across 47 individuals) of 9,651 mRNAs | 1E |
-| `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv` | pTE (`pred_0`) of NCBI RefSeq mRNAs | 1F, 1G |
+| `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv` | pTE (`pred_0`) of NCBI RefSeq mRNAs | 1F |
 | `hsa_miRWalk_{5UTR,CDS,3UTR}.prob_0.9_NM.info.txt` | miRWalk miRNA binding sites on RefSeq mRNAs (binding probability ≥ 0.9) | 1F |
 | `PMD22221297_B_naive_high_confidence.tsv` | miRNAs expressed in naive B cells (PMID 22221297) | 1F |
-| `uORF_dump_uORFdb.hs.tsv` | human uORFs from uORFdb | 1G |
+| `uORFdb_hs_count_strong_scores.sel.tsv` | for each of 66,023 RefSeq mRNAs, the number of strong uORFs in uORFdb (`count_n`, NA when there is none) and pTE (`pred_0`) | 1G |
+| `uORFdb_hs_count_scores.sel.tsv` | the same for all uORFs in uORFdb (not used in the panel) | |
+
+`analysis/Fig1G_input_subset.R` shows how the two uORF tables were made from the uORFdb dump (`uORF_dump_uORFdb.hs.tsv`) and the RefSeq predictions. You do not need it to reproduce the figure.
 
 ## Panels
 
@@ -38,6 +41,8 @@ Scripts: `analysis/Fig1E_analysis.R`, `plot/Fig1E_plot.R` (uses `plot/fig_style.
 Distribution of pTE across mRNAs with or without (F) 3’UTR miRNA binding sites or (G) 5’UTR upstream open reading frame (uORF). The y-axis shows the fraction of mRNAs in each pTE category. P-value from Fisher’s Exact test indicates significant shifts in pTE distributions.
 
 1F counts 3′UTR binding sites of miRNAs expressed in naive B cells; 1G uses strong uORFs from uORFdb. Scripts: `analysis/Fig1F_analysis.R` and `plot/Fig1F_plot.R`, `analysis/Fig1G_analysis.R` and `plot/Fig1G_plot.R`. Output: `output/Fig1F.pdf`, `output/Fig1G.pdf`.
+
+1G compares 52,808 mRNAs with a strong uORF and 13,215 without. The P value printed on the panel is the Fisher test at pTE 0.5 (5.6 × 10⁻⁵⁰); `output/Fig1G_tests.tsv` has the tests at every cutoff.
 
 ## Run
 

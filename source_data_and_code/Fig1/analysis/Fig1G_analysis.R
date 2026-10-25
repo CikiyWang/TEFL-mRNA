@@ -11,18 +11,9 @@ input_dir <- file.path(base_dir, "input")
 output_dir <- file.path(base_dir, "output")
 dir.create(output_dir, showWarnings = FALSE)
 
-# uORFdb dump without header: V9 = transcript ID with version, V30 = uORF class; V1 is a row index
-uORFdb_hs <- as.data.frame(fread(file.path(input_dir, "uORF_dump_uORFdb.hs.tsv"), sep = "\t"))[, -1]
-uORFdb_hs_strong <- uORFdb_hs[uORFdb_hs$V30 == "strong", ]
-uORF_count <- as.data.frame(uORFdb_hs_strong %>% group_by(V9) %>% summarise(count_n = n()))
-colnames(uORF_count) <- c("transcript_refid_version", "count_n")
-uORF_count$transcript_refid <- vapply(strsplit(uORF_count$transcript_refid_version, ".", fixed = TRUE), `[`, "", 1)
-
-pred_score_all <- as.data.frame(fread(file.path(input_dir, "pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv"),
-                                      sep = "\t", select = c("transcript_refid", "pred_0")))
-
-scores <- merge(uORF_count, pred_score_all, by = "transcript_refid", all = TRUE)
-scores <- scores[scores$transcript_refid %in% pred_score_all$transcript_refid, ]
+# strong uORFs in uORFdb per RefSeq mRNA, joined to pTE (built by analysis/Fig1G_input_subset.R);
+# count_n is NA for mRNAs without a strong uORF
+scores <- as.data.frame(fread(file.path(input_dir, "uORFdb_hs_count_strong_scores.sel.tsv"), sep = "\t"))
 scores$count_n[is.na(scores$count_n)] <- 0
 scores$if_uORF <- ifelse(scores$count_n > 0, "with_uORF", "without_uORF")
 scores <- scores[order(scores$pred_0), ]
