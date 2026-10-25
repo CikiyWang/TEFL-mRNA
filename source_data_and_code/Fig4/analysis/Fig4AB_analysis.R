@@ -17,12 +17,11 @@ input_dir <- file.path(base_dir, "input")
 output_dir <- file.path(base_dir, "output")
 dir.create(output_dir, showWarnings = FALSE)
 
-read_delta <- function(region) {
-  f <- file.path(input_dir, sprintf("Pred_All.gnomad.exomes.v4.0.sites.PASS_pc_SNV_NM.%s.filter_cor0.7_l0.25_h1.TPE_opt.delta.filter.tsv", region))
-  as.data.frame(fread(f, sep = "\t", select = c("gene", "delta_score_high")))
-}
-deltas <- lapply(c("5_prime_UTR_variant", "3_prime_UTR_variant", "synonymous_variant", "missense_variant"), read_delta)
-sel_gene_filter <- unique(unlist(lapply(deltas, function(d) d$gene[abs(d$delta_score_high) > 0.1])))
+# SNV-transcript pairs with |delta pTE| > 0.1 in the four regions, with the gene of each transcript
+# (built by analysis/Fig4AB_input_subset.R)
+pairs <- fread(file.path(input_dir, "Pred_All.gnomad.exomes.v4.0.sites.PASS_pc_SNV_NM.filter_cor0.7_l0.25_h1.TPE_opt.delta.abs_gt_0.1.genes.tsv"),
+               sep = "\t", select = c("gene", "delta_score_high"))
+sel_gene_filter <- unique(pairs$gene[abs(pairs$delta_score_high) > 0.1])
 cat(sprintf("%d genes with |delta pTE| > 0.1\n", length(sel_gene_filter)))
 
 ## ---- Fig. 4A ----

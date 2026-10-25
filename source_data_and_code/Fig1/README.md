@@ -4,19 +4,32 @@ Run the commands from the `Fig1/` folder. Each analysis script writes source dat
 
 ## Input
 
-The two uORF tables for 1G are in `input/`. Put the other files there before running:
+The inputs of 1F (miRNA binding sites and pTE) and 1G (uORF tables) are in `input/`. Put the other files there before running:
 
 | File | Content | Panels |
 |---|---|---|
 | `Model_Prediction.fold_1.tsv` … `Model_Prediction.fold_10.tsv` | held-out predictions of the LCL TE classifier in each cross-validation fold (`true_y_bi_0`, TE-high label; `pred_0`, pTE) | 1C, 1D |
 | `pTE_vs_measured_TE.published_panel.tsv` | pTE and measured TE (median across 47 individuals) of 9,651 mRNAs | 1E |
-| `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv` | pTE (`pred_0`) of NCBI RefSeq mRNAs | 1F |
-| `hsa_miRWalk_{5UTR,CDS,3UTR}.prob_0.9_NM.info.txt` | miRWalk miRNA binding sites on RefSeq mRNAs (binding probability ≥ 0.9) | 1F |
-| `PMD22221297_B_naive_high_confidence.tsv` | miRNAs expressed in naive B cells (PMID 22221297) | 1F |
+| `miRWalk_prob1_sites.B_naive_miRNAs.tsv` (included) | miRWalk binding sites (binding probability 1) of miRNAs expressed in naive B cells on RefSeq mRNAs, one row per site, with the region (5′UTR, CDS, 3′UTR) and the miRNA expression (RPM) | 1F |
+| `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.pTE.tsv` (included) | pTE (`pred_0`) of the 66,023 RefSeq mRNAs | 1F |
 | `uORFdb_hs_count_strong_scores.sel.tsv` | for each of 66,023 RefSeq mRNAs, the number of strong uORFs in uORFdb (`count_n`, NA when there is none) and pTE (`pred_0`) | 1G |
 | `uORFdb_hs_count_scores.sel.tsv` | the same for all uORFs in uORFdb (not used in the panel) | |
 
 `analysis/Fig1G_input_subset.R` shows how the two uORF tables were made from the uORFdb dump (`uORF_dump_uORFdb.hs.tsv`) and the RefSeq predictions. You do not need it to reproduce the figure.
+
+### Preprocessing for 1F
+
+`analysis/Fig1F_preprocess_miRNA.R` builds the two 1F inputs from three sources:
+
+1. miRWalk 3.0 (http://mirwalk.umm.uni-heidelberg.de/), human predicted miRNA–target interactions for the 5′UTR, CDS and 3′UTR. From each region file keep the RefSeq `NM_` transcripts with binding probability ≥ 0.9 and five columns (miRNA, RefSeq ID, gene symbol, duplex position, binding probability), saved as `hsa_miRWalk_5UTR.prob_0.9_NM.info.txt`, `hsa_miRWalk_CDS.prob_0.9_NM.info.txt` and `hsa_miRWalk_3UTR.prob_0.9_NM.info.txt`. The script keeps sites with binding probability 1.
+2. miRBase (https://www.mirbase.org/), high-confidence human hairpins with their reads per million in the naive B-cell sample of PMID 22221297, saved as `PMD22221297_B_naive_high_confidence.tsv` (columns Name, Accession, RPM, Chromosome, Start, End, Strand, Confidence).
+3. The TEFL-mRNA predictions for NCBI RefSeq mRNAs, `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv`.
+
+```bash
+Rscript analysis/Fig1F_preprocess_miRNA.R <miRWalk directory> PMD22221297_B_naive_high_confidence.tsv pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv
+```
+
+`analysis/Fig1F_input_subset.R` extracts the same two tables from the saved intermediate `pred_score_all_miRNA_merge_exp.tsv`; that is how the included files were made.
 
 ## Panels
 
@@ -41,6 +54,8 @@ Scripts: `analysis/Fig1E_analysis.R`, `plot/Fig1E_plot.R` (uses `plot/fig_style.
 Distribution of pTE across mRNAs with or without (F) 3’UTR miRNA binding sites or (G) 5’UTR upstream open reading frame (uORF). The y-axis shows the fraction of mRNAs in each pTE category. P-value from Fisher’s Exact test indicates significant shifts in pTE distributions.
 
 1F counts 3′UTR binding sites of miRNAs expressed in naive B cells; 1G uses strong uORFs from uORFdb. Scripts: `analysis/Fig1F_analysis.R` and `plot/Fig1F_plot.R`, `analysis/Fig1G_analysis.R` and `plot/Fig1G_plot.R`. Output: `output/Fig1F.pdf`, `output/Fig1G.pdf`.
+
+1F compares 15,387 mRNAs with a 3′UTR binding site and 50,636 without. The P value printed on the panel is the Fisher test at pTE 0.5 (4.3 × 10⁻²⁹); `output/Fig1F_tests.tsv` has the tests at every cutoff. The expressed miRNAs are matched to miRWalk by name, with "mir" in the miRBase hairpin name replaced by "miR". This matches only mature miRNAs named without a -5p/-3p arm, so the sites come from 8 miRNAs (miR-107, 19,284 RPM; miR-2110, -577, -421, -760, -643, -429 and -1276, 0–40 RPM); arm-named miRNAs, including the most abundant B-cell miRNAs, are not included. pTE is taken from `pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv`, the model used throughout the figure; the prediction columns of the saved intermediate come from another model version (`pred_ncbi_mRNA.filter_TE_less.opt-correct.tsv`), with which the Fisher P at 0.5 would be 1.4 × 10⁻¹⁶³.
 
 1G compares 52,808 mRNAs with a strong uORF and 13,215 without. The P value printed on the panel is the Fisher test at pTE 0.5 (5.6 × 10⁻⁵⁰); `output/Fig1G_tests.tsv` has the tests at every cutoff.
 

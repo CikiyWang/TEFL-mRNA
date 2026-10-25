@@ -11,28 +11,12 @@ input_dir <- file.path(base_dir, "input")
 output_dir <- file.path(base_dir, "output")
 dir.create(output_dir, showWarnings = FALSE)
 
-pred_score_all <- as.data.frame(fread(file.path(input_dir, "pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv"),
-                                      sep = "\t", select = c("transcript_refid", "pred_0")))
+pred_score_all <- as.data.frame(fread(file.path(input_dir, "pred_ncbi_mRNA.filter_TE_less.opt-correct.pTE.tsv"), sep = "\t"))
 pred_score_all$seq_id <- gsub("\\s+", "", pred_score_all$transcript_refid)
 
-read_mirwalk <- function(f) read.table(file.path(input_dir, f), sep = "\t", header = FALSE)
-mir_mRNA_5UTR <- read_mirwalk("hsa_miRWalk_5UTR.prob_0.9_NM.info.txt")
-mir_mRNA_CDS <- read_mirwalk("hsa_miRWalk_CDS.prob_0.9_NM.info.txt")
-mir_mRNA_3UTR <- read_mirwalk("hsa_miRWalk_3UTR.prob_0.9_NM.info.txt")
-mir_mRNA <- rbind(mir_mRNA_5UTR, mir_mRNA_CDS, mir_mRNA_3UTR)
-colnames(mir_mRNA) <- c("miRNA", "mRNA", "Genesymbol", "duplex", "binding_probability")
-mir_mRNA$region <- c(rep("5'UTR", nrow(mir_mRNA_5UTR)), rep("CDS", nrow(mir_mRNA_CDS)), rep("3'UTR", nrow(mir_mRNA_3UTR)))
-mir_mRNA$seq_id <- gsub("\\s+", "", mir_mRNA$mRNA)
-mir_mRNA_1 <- mir_mRNA[mir_mRNA$binding_probability == 1, ]
-
-# miRNAs expressed in naive B cells
-mir_exp <- read.table(file.path(input_dir, "PMD22221297_B_naive_high_confidence.tsv"), sep = "\t", header = TRUE)
-mir_exp$miRNA <- gsub("mir", "miR", mir_exp$Name)
-mir_mRNA_1$miRNA <- gsub("\\s+", "", mir_mRNA_1$miRNA)
-mir_mRNA_exp <- mir_mRNA_1[mir_mRNA_1$miRNA %in% mir_exp$miRNA, ]
-mir_mRNA_exp <- merge(mir_mRNA_exp, mir_exp, by = "miRNA")
-
-sites <- merge(pred_score_all[, c("seq_id", "pred_0")], mir_mRNA_exp[, c("seq_id", "region")], by = "seq_id")
+# miRWalk sites (binding probability 1) of miRNAs expressed in naive B cells on RefSeq mRNAs, one row
+# per site (built by analysis/Fig1F_preprocess_miRNA.R or analysis/Fig1F_input_subset.R)
+sites <- as.data.frame(fread(file.path(input_dir, "miRWalk_prob1_sites.B_naive_miRNAs.tsv"), sep = "\t", select = c("seq_id", "region")))
 n_UTR3 <- sites[sites$region == "3'UTR", ] %>% group_by(seq_id) %>% summarise(n_UTR3 = n())
 
 df_n_UTR3 <- merge(pred_score_all[pred_score_all$seq_id != "", c("seq_id", "pred_0")], n_UTR3, by = "seq_id", all = TRUE)
