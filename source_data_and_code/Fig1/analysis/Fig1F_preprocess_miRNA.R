@@ -5,7 +5,7 @@
 # analysis/Fig1F_input_subset.R extracts from the saved intermediate) and the pTE table.
 #
 #   Rscript analysis/Fig1F_preprocess_miRNA.R <miRWalk directory> <PMD22221297_B_naive_high_confidence.tsv> \
-#                                             <pred_ncbi_mRNA.filter_TE_less.opt-correct.tsv>
+#                                             <pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.tsv>
 #
 # miRWalk directory: hsa_miRWalk_5UTR.prob_0.9_NM.info.txt, hsa_miRWalk_CDS.prob_0.9_NM.info.txt and
 # hsa_miRWalk_3UTR.prob_0.9_NM.info.txt, the miRWalk human target predictions of each region kept for
@@ -51,5 +51,5 @@ sites[, log2RPM := as.character(log2(as.numeric(RPM) + 1))]
 SITE_COLS <- c("seq_id", "miRNA", "Genesymbol", "duplex", "binding_probability", "region",
                "Name", "Accession", "RPM", "Chromosome", "Start", "End", "Strand", "Confidence", "log2RPM")
 fwrite(sites[, ..SITE_COLS], file.path(input_dir, "miRWalk_prob1_sites.B_naive_miRNAs.tsv"), sep = "\t")
-fwrite(pte, file.path(input_dir, "pred_ncbi_mRNA.filter_TE_less.opt-correct.pTE.tsv"), sep = "\t")
+fwrite(pte, file.path(input_dir, "pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.pTE.tsv"), sep = "\t")
 cat(nrow(sites), "sites of", uniqueN(sites$miRNA), "miRNAs on", uniqueN(sites$seq_id), "mRNAs\n")

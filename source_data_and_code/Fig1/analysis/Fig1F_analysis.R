@@ -11,7 +11,7 @@ input_dir <- file.path(base_dir, "input")
 output_dir <- file.path(base_dir, "output")
 dir.create(output_dir, showWarnings = FALSE)
 
-pred_score_all <- as.data.frame(fread(file.path(input_dir, "pred_ncbi_mRNA.filter_TE_less.opt-correct.pTE.tsv"), sep = "\t"))
+pred_score_all <- as.data.frame(fread(file.path(input_dir, "pred_ncbi_mRNA.filter_cor0.7_l0.25_h1.tpe_opt.pTE.tsv"), sep = "\t"))
 pred_score_all$seq_id <- gsub("\\s+", "", pred_score_all$transcript_refid)
 
 # miRWalk sites (binding probability 1) of miRNAs expressed in naive B cells on RefSeq mRNAs, one row
