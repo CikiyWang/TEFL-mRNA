@@ -1,0 +1,4 @@
+gene	transcript_refid_var	chrom_pos_s	ref	alt	pos	pTE_REF	pTE_ALT	delta_pTE	GWAS_traits
+SPPL2A	NM_032802_G_A_36	chr15:50765671	G	A	36	0.700444638729096	0.8116288	0.1111841	Alzheimer disease, polygenic risk score
+SMC2	NM_001042550_C_A_3	chr9:104094629	C	A	3	0.677990019321442	0.80689394	0.128903920678558	breast cancer, ovarian carcinoma
+IRF3	NM_001197127_A_G_95	chr19:49665763	A	G	95	0.354603469371796	0.5044259	0.149822430628204	schizophrenia, inflammatory bowel disease

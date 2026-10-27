@@ -1,0 +1,7 @@
+gene,hgvs,hgvs_full,refseq,utr5_position,ref_allele,alt_allele,utr5_length,pUnpaired_variant_ref,pUnpaired_variant_alt,luc_direction,delta_pUnpaired
+CCL14,c.-71C>A,NM_032963.4:c.-71C>A,NM_032963.4,10,C,A,80,0.997,0.971,increase,-0.026
+BCL6,c.-99G>A,NM_001706.5:c.-99G>A,NM_001706.5,10,G,A,108,0.972,1.0,increase,0.028
+MLH1,c.-22C>T,NM_001258271.2:c.-22C>T,NM_001258271.2,9,C,T,30,0.954,0.943,increase,-0.011
+PIK3C3,c.-45T>C,NM_001308020.2:c.-45T>C,NM_001308020.2,14,T,C,58,0.924,0.58,decrease,-0.344
+H3C4,c.-25A>C,NM_001376937.1:c.-25A>C,NM_001376937.1,12,A,C,36,0.746,0.007,decrease,-0.739
+HLA-G,c.-44T>A,NM_001363567.2:c.-44T>A,NM_001363567.2,29,T,A,72,0.034,0.879,decrease,0.845

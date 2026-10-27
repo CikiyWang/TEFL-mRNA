@@ -1,0 +1,11 @@
+file	bytes	md5	panels
+shared/input/gnomAD_v4_5UTR_SNVs_dpTE.tsv.gz	103538459	f394f65edbf1e2db08ef451d283c47d7	Fig. 2C; source of the Fig. 2B, 4A–B and EV4C subsets
+shared/input/gnomAD_v4_3UTR_SNVs_dpTE.tsv.gz	227049804	db4674993f49f173051e70bc03a4d13b	source of the Fig. 2B and 4A–B subsets
+shared/input/gnomAD_v4_synonymous_SNVs_dpTE.tsv.gz	359972227	2808384cea887bb8d4fbb928978cc51d	Fig. EV5D–F; source of the Fig. 2B, 3A–D and 4A–B subsets
+shared/input/gnomAD_v4_missense_SNVs_dpTE.tsv.gz	417358423	293ad29b7b35c56ebe5d0e564005182d	Fig. EV5D–F; source of the Fig. 2B, 3E–F, 4A–B and EV5A–C subsets
+shared/input/RefSeq_mRNA_sequences.tsv.gz	55254809	5f7f4a64afe955fd3b1c1d7e2672c135	Fig. EV5D–F
+shared/input/RefSeq_mRNA_sequences_RiboNN_input.tsv.gz	42665513	c0c3cfc6a8ccc6de9c6509857e6864fb	Fig. EV5D–F
+Fig5/input/ExAC_missense_SNVs_dpTE_9_cell_lines.tsv.gz	594016198	9842ae668576d60fc90cb88e1df74648	Fig. 5C
+Fig5/input/ExAC_synonymous_SNVs_dpTE_9_cell_lines.tsv.gz	317615844	0ecb27f9c34911adfa8ee28702be692d	Fig. 5C
+Fig5/input/ExAC_3UTR_SNVs_dpTE_9_cell_lines.tsv.gz	49869128	429503496a95b2881815c446894562db	Fig. 5C
+ExpandedView/FigEV4/input/gnomAD_v4_SNVs_dpTE_start_stop_1kb.tsv.gz	420685253	ea11acf3bbd4c683ed4ca8a60c647c7c	Fig. EV4B

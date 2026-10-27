@@ -1,0 +1,3 @@
+panel	Feature	n_bins	pearson_r	p_value
+EV2C	GC Ratio	3294	-0.826134677536775	0
+EV2D	CAI	3294	-0.814396087823048	0

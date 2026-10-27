@@ -1,0 +1,5 @@
+Group	Outcome	Count	Proportion	Total
+Pro_SNVs	TE_decreasing	1684	0.825490196078431	2040
+All_SNVs	TE_decreasing	16877	0.48345698816924	34909
+Pro_SNVs	TE_increasing	356	0.174509803921569	2040
+All_SNVs	TE_increasing	18032	0.51654301183076	34909

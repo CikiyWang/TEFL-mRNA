@@ -1,0 +1,13 @@
+class	metric	value
+Synonymous	R2_subst_only	0.0479350303284578
+Missense	R2_subst_only	0.0413569921953129
+Synonymous	R2_gc_only	0.000308888047185558
+Missense	R2_gc_only	0.000786328800206114
+Synonymous	R2_full	0.049963929807938
+Missense	R2_full	0.041846694372704
+Synonymous	n_variants	16512884
+Missense	n_variants	18657235
+Synonymous	beta_local_gc	-0.00131756161850172
+Synonymous	beta_tx_gc	-0.0017838801009099
+Missense	beta_local_gc	-0.000842800975366369
+Missense	beta_tx_gc	0.00149011440990835

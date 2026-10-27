@@ -1,0 +1,351 @@
+go	V1	V2	term	parent	parentTerm	size
+GO:0006520	-0.368192004630875	0.0339480119858362	cellular amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	20
+GO:0072521	-0.230540581644346	-0.0187987055461946	purine-containing compound metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0044282	-0.367812165088785	0.0273270320301717	small molecule catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0006163	-0.439637742640669	0.0264098855899051	purine nucleotide metabolic process	GO:0072521	purine-containing compound metabolic process	13
+GO:0019693	-0.244578442218968	0.0358847963075813	ribose phosphate metabolic process	GO:0009259	ribonucleotide metabolic process	3
+GO:0009259	-0.426303120568926	0.0422249787811782	ribonucleotide metabolic process	GO:0009259	ribonucleotide metabolic process	1
+GO:0006631	-0.374897647744567	0.0526359375549041	fatty acid metabolic process	GO:0072521	purine-containing compound metabolic process	72
+GO:1901293	-0.423561314066816	0.0395610543986409	nucleoside phosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0034660	-0.166533183077475	-0.019038436721852	ncRNA metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009150	-0.43927401046169	0.0273031629728035	purine ribonucleotide metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:1901605	-0.357396927486849	0.0344750651605958	alpha-amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	1
+GO:0009165	-0.422363398864191	0.0397930725061392	nucleotide biosynthetic process	GO:0009259	ribonucleotide metabolic process	11
+GO:0009116	-0.386742714121061	0.0281232372657823	nucleoside metabolic process	GO:0072521	purine-containing compound metabolic process	12
+GO:0072522	-0.248837861038257	-0.0135857028761971	purine-containing compound biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009119	-0.376739590745638	0.0287954000177308	ribonucleoside metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009123	-0.389624964283344	0.044605385830281	nucleoside monophosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0016054	-0.363838703537902	0.0243557973150736	organic acid catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0046395	-0.365008059703498	0.0246263735581434	carboxylic acid catabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0006399	-0.147730751064375	-0.0171254291852321	tRNA metabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0009161	-0.383013529847215	0.0449461047944198	ribonucleoside monophosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0051604	-0.11876584447147	-0.0311690089252086	protein maturation	GO:0072521	purine-containing compound metabolic process	22
+GO:0034470	-0.159568218532043	-0.0177314339256478	ncRNA processing	GO:0072521	purine-containing compound metabolic process	1
+GO:0046390	-0.261017383809788	0.0350451333115679	ribose phosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	2
+GO:0009167	-0.378837811370813	0.0451540936819357	purine ribonucleoside monophosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0009260	-0.418022608717797	0.040929561878645	ribonucleotide biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:1901657	-0.104860657649224	0.0139674160498457	glycosyl compound metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0046128	-0.38470883815004	0.0285570780712686	purine ribonucleoside metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0006164	-0.431844491861768	0.0256982146799214	purine nucleotide biosynthetic process	GO:0072521	purine-containing compound metabolic process	13
+GO:0009152	-0.431494008686138	0.0265039895162224	purine ribonucleotide biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009126	-0.379799936268198	0.0450685071123483	purine nucleoside monophosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0006839	0.337961804302144	0.379253287915046	mitochondrial transport	GO:0006839	mitochondrial transport	20
+GO:0006413	-0.192555160661012	-0.0220647758903086	translational initiation	GO:0072521	purine-containing compound metabolic process	166
+GO:0097193	0.392914418219112	-0.362720135063559	intrinsic apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	27
+GO:0009451	-0.138655239509313	-0.0198045782619607	RNA modification	GO:0072521	purine-containing compound metabolic process	1
+GO:0042278	-0.386331660029818	0.0283923734149482	purine nucleoside metabolic process	GO:0072521	purine-containing compound metabolic process	5
+GO:2001242	0.407218146824762	-0.386887118528284	regulation of intrinsic apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	7
+GO:0019395	-0.339974875934673	0.052646037334122	fatty acid oxidation	GO:0009259	ribonucleotide metabolic process	16
+GO:1901606	-0.364278155141026	0.0084760185288492	alpha-amino acid catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0019083	0.223421222870333	-0.0178584694026564	viral transcription	GO:0019083	viral transcription	109
+GO:0006066	-0.342107895951758	0.0592431875222528	alcohol metabolic process	GO:0072521	purine-containing compound metabolic process	6
+GO:0042273	0.221701154763772	0.0829543211918618	ribosomal large subunit biogenesis	GO:0042273	ribosomal large subunit biogenesis	34
+GO:0000184	-0.114469774002768	-0.149983680728149	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	GO:0072521	purine-containing compound metabolic process	153
+GO:0042254	0.225462388012758	0.0892931916588511	ribosome biogenesis	GO:0042273	ribosomal large subunit biogenesis	32
+GO:0019080	0.223558801751048	-0.0179660862939612	viral gene expression	GO:0019083	viral transcription	0
+GO:0030258	-0.0905721319047843	0.00197060413549066	lipid modification	GO:0009259	ribonucleotide metabolic process	7
+GO:0007031	0.236892325820809	0.113387110183992	peroxisome organization	GO:0042273	ribosomal large subunit biogenesis	31
+GO:0006605	0.383662307847941	0.528561458039465	protein targeting	GO:0006839	mitochondrial transport	47
+GO:0034440	-0.081257088292249	0.00289718831589762	lipid oxidation	GO:0009259	ribonucleotide metabolic process	6
+GO:0009063	-0.367612608319384	0.0082529857247928	cellular amino acid catabolic process	GO:0072521	purine-containing compound metabolic process	3
+GO:2001233	0.407678445490996	-0.385836083807237	regulation of apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	0
+GO:0016485	-0.117482584855723	-0.0515613148447817	protein processing	GO:0072521	purine-containing compound metabolic process	70
+GO:0019079	0.224265940678157	-0.0187669727080177	viral genome replication	GO:0019083	viral transcription	14
+GO:0006979	0.305660551881852	-0.23303320448869	response to oxidative stress	GO:0006979	response to oxidative stress	112
+GO:2001234	0.407881790457413	-0.402122315115636	negative regulation of apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	29
+GO:0043903	0.270053612493887	-0.106876437108211	regulation of symbiotic process	GO:0019083	viral transcription	0
+GO:0006400	-0.134302089685063	-0.0171597768011451	tRNA modification	GO:0072521	purine-containing compound metabolic process	35
+GO:2000116	-0.0651040208166435	-0.136394958292577	regulation of cysteine-type endopeptidase activity	GO:0072521	purine-containing compound metabolic process	3
+GO:0062197	0.322855872492775	-0.272174577392641	cellular response to chemical stress	GO:0006979	response to oxidative stress	0
+GO:0033866	-0.392774152737636	0.0423836553611114	nucleoside bisphosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0034030	-0.392774152737636	0.0423836553611114	ribonucleoside bisphosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0034033	-0.409543875103818	0.0284944205278067	purine nucleoside bisphosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0035384	-0.0826582214364375	0.00773320125735117	thioester biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0071616	-0.40907718697529	0.0303197690263642	acyl-CoA biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0060271	0.235877597579317	0.102989864094219	cilium assembly	GO:0042273	ribosomal large subunit biogenesis	252
+GO:0016053	-0.357224982746768	0.0523467009657452	organic acid biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:2000106	0.325803029089782	-0.233545958295368	regulation of leukocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	0
+GO:0043281	0.0518047858292914	-0.276072073989662	regulation of cysteine-type endopeptidase activity involved in apoptotic process	GO:0072521	purine-containing compound metabolic process	10
+GO:0006402	-0.137762856815345	-0.16229179061651	mRNA catabolic process	GO:0072521	purine-containing compound metabolic process	31
+GO:0006401	-0.21391605023799	-0.0450403857398924	RNA catabolic process	GO:0072521	purine-containing compound metabolic process	29
+GO:0046394	-0.358584803446317	0.0526468061162278	carboxylic acid biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0071887	0.29429844601687	-0.170978358753206	leukocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	2
+GO:0043574	0.339759603202008	0.418203023351223	peroxisomal transport	GO:0006839	mitochondrial transport	0
+GO:0009124	-0.388014691382038	0.0428818028311884	nucleoside monophosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	1
+GO:0019058	0.225347517901493	-0.0195432831156487	viral life cycle	GO:0019083	viral transcription	31
+GO:0051052	-0.087260258785119	-0.125774797411578	regulation of DNA metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0006625	0.401436922142835	0.53447296443572	protein targeting to peroxisome	GO:0042273	ribosomal large subunit biogenesis	75
+GO:0072662	0.380643137390111	0.482337536451144	protein localization to peroxisome	GO:0042273	ribosomal large subunit biogenesis	0
+GO:0072663	0.388302114121563	0.499049795254519	establishment of protein localization to peroxisome	GO:0042273	ribosomal large subunit biogenesis	1
+GO:0044782	0.234167929483059	0.100545914724511	cilium organization	GO:0042273	ribosomal large subunit biogenesis	23
+GO:0044839	0.202776916915128	-0.0158836428680696	cell cycle G2/M phase transition	GO:0044839	cell cycle G2/M phase transition	2
+GO:0043161	-0.178964041220745	-0.0662605401471669	proteasome-mediated ubiquitin-dependent protein catabolic process	GO:0072521	purine-containing compound metabolic process	240
+GO:0045069	0.26678922322203	-0.100352590207011	regulation of viral genome replication	GO:0019083	viral transcription	4
+GO:2001243	0.408465516473933	-0.403982583863805	negative regulation of intrinsic apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	27
+GO:0006670	-0.301511116018814	0.0335222448174126	sphingosine metabolic process	GO:0009259	ribonucleotide metabolic process	10
+GO:0009112	-0.357043199111448	0.0272911672146003	nucleobase metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:1990542	0.324685442813821	0.359087232741693	mitochondrial transmembrane transport	GO:0006839	mitochondrial transport	11
+GO:0000470	-0.0549214475376185	0.0532620905154958	maturation of LSU-rRNA	GO:0042273	ribosomal large subunit biogenesis	13
+GO:0034311	-0.282261888849859	0.0573405076105355	diol metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0002474	0.22337427397195	-0.0306062127403945	antigen processing and presentation of peptide antigen via MHC class I	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	31
+GO:0010498	-0.184145123070726	-0.0666320271041126	proteasomal protein catabolic process	GO:0072521	purine-containing compound metabolic process	36
+GO:1901568	-0.0235723269239498	-0.000799805425865297	fatty acid derivative metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0043648	-0.308521787793384	0.0567602772248159	dicarboxylic acid metabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0000209	-0.114811541158548	-0.0302689374514809	protein polyubiquitination	GO:0072521	purine-containing compound metabolic process	327
+GO:0008033	-0.138632432291203	-0.0155692224545702	tRNA processing	GO:0072521	purine-containing compound metabolic process	20
+GO:1902749	0.252302012592255	-0.108960197340158	regulation of cell cycle G2/M phase transition	GO:0044839	cell cycle G2/M phase transition	6
+GO:0070585	0.369103141871314	0.482141448767513	protein localization to mitochondrion	GO:0006839	mitochondrial transport	8
+GO:0042770	0.352621007518771	-0.33304799425139	signal transduction in response to DNA damage	GO:0006979	response to oxidative stress	13
+GO:0001676	-0.341191707581875	0.0524354430889915	long-chain fatty acid metabolic process	GO:0072521	purine-containing compound metabolic process	29
+GO:0009156	-0.384704904392006	0.0430418237406266	ribonucleoside monophosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	4
+GO:0006766	-0.301377093362879	0.0605420077167594	vitamin metabolic process	GO:0072521	purine-containing compound metabolic process	6
+GO:1902165	0.419742351887152	-0.42647140101519	regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator	GO:0006979	response to oxidative stress	1
+GO:0072329	-0.350449374209055	0.0260658212248196	monocarboxylic acid catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:2001021	0.364833598708783	-0.366723400793006	negative regulation of response to DNA damage stimulus	GO:0006979	response to oxidative stress	1
+GO:0042445	0.0635477108705022	-0.0610609911474298	hormone metabolic process	GO:0042445	hormone metabolic process	14
+GO:0034404	-0.386785264906737	0.038348729609751	nucleobase-containing small molecule biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009064	-0.326492464291856	0.0352135616275627	glutamine family amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0015949	-0.330840683422199	0.0395672550403293	nucleobase-containing small molecule interconversion	GO:0072521	purine-containing compound metabolic process	27
+GO:0009132	-0.398820030548677	0.043481529100382	nucleoside diphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	3
+GO:0009168	-0.378534398520935	0.0433472530187722	purine ribonucleoside monophosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	13
+GO:0072330	-0.35164031211896	0.0534775981693202	monocarboxylic acid biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0046033	-0.376499192036865	0.0336909498300432	AMP metabolic process	GO:0009259	ribonucleotide metabolic process	9
+GO:1902253	0.401001331467449	-0.376995549776918	regulation of intrinsic apoptotic signaling pathway by p53 class mediator	GO:0006979	response to oxidative stress	2
+GO:1901797	0.35763366360741	-0.333640079593316	negative regulation of signal transduction by p53 class mediator	GO:0006979	response to oxidative stress	5
+GO:0000086	0.202760000069886	-0.015848070488078	G2/M transition of mitotic cell cycle	GO:0044839	cell cycle G2/M phase transition	141
+GO:0016042	-0.162190566260106	-0.0295962757691063	lipid catabolic process	GO:0009259	ribonucleotide metabolic process	82
+GO:0006085	-0.394264687977428	0.0312185192277128	acetyl-CoA biosynthetic process	GO:0072521	purine-containing compound metabolic process	8
+GO:0009127	-0.37929642031723	0.043296861603055	purine nucleoside monophosphate biosynthetic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0034312	-0.294498348812514	0.0526932815767781	diol biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:2001020	0.366875600711018	-0.356061184461731	regulation of response to DNA damage stimulus	GO:0006979	response to oxidative stress	13
+GO:0042493	0.275768264125407	-0.163670452883573	response to drug	GO:0006979	response to oxidative stress	289
+GO:0043687	-0.106070320281948	-0.0283692468632376	post-translational protein modification	GO:0072521	purine-containing compound metabolic process	346
+GO:0072523	-0.240983541768112	-0.0349526594987159	purine-containing compound catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0034599	0.324795393942175	-0.274720078138013	cellular response to oxidative stress	GO:0006979	response to oxidative stress	107
+GO:0050792	0.269982282721997	-0.106599882724008	regulation of viral process	GO:0019083	viral transcription	6
+GO:0000956	-0.12772801930463	-0.156939214201906	nuclear-transcribed mRNA catabolic process	GO:0072521	purine-containing compound metabolic process	17
+GO:1903311	-0.0851028989303405	-0.124627401153366	regulation of mRNA metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0070972	0.364695435213448	0.478203156241559	protein localization to endoplasmic reticulum	GO:0006839	mitochondrial transport	6
+GO:0043280	0.0653706084675345	-0.286578150095396	positive regulation of cysteine-type endopeptidase activity involved in apoptotic process	GO:0072521	purine-containing compound metabolic process	61
+GO:0090305	-0.136804114630694	-0.0148779070662328	nucleic acid phosphodiester bond hydrolysis	GO:0072521	purine-containing compound metabolic process	71
+GO:1905039	0.33659082281865	0.410030839070698	carboxylic acid transmembrane transport	GO:0006839	mitochondrial transport	2
+GO:0006364	-0.0925081314968999	0.0577094191816128	rRNA processing	GO:0072521	purine-containing compound metabolic process	172
+GO:0016311	-0.153892248631347	0.0203714431243788	dephosphorylation	GO:0009259	ribonucleotide metabolic process	102
+GO:1901264	0.33527081689632	0.393393847968875	carbohydrate derivative transport	GO:0006839	mitochondrial transport	1
+GO:0019751	-0.315723477166165	0.0586704582918513	polyol metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0009185	-0.394459094993248	0.0436432716724017	ribonucleoside diphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0045862	-0.0377933456488489	-0.164093717214504	positive regulation of proteolysis	GO:0072521	purine-containing compound metabolic process	20
+GO:0052548	-0.07350290732614	-0.140011983219541	regulation of endopeptidase activity	GO:0072521	purine-containing compound metabolic process	8
+GO:1903825	0.335914556269637	0.408391313473371	organic acid transmembrane transport	GO:0006839	mitochondrial transport	1
+GO:0016072	-0.14758741207995	-0.0169580159491982	rRNA metabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0022613	0.226311672310562	0.0908518052522586	ribonucleoprotein complex biogenesis	GO:0042273	ribosomal large subunit biogenesis	1
+GO:0006665	-0.152968913309427	-0.010055285509015	sphingolipid metabolic process	GO:0009259	ribonucleotide metabolic process	26
+GO:0072655	0.374580338961288	0.496054525465802	establishment of protein localization to mitochondrion	GO:0006839	mitochondrial transport	5
+GO:0046512	-0.319536219024723	0.0213293272507941	sphingosine biosynthetic process	GO:0009259	ribonucleotide metabolic process	23
+GO:0046520	-0.159397765641962	-0.00253820200114294	sphingoid biosynthetic process	GO:0009259	ribonucleotide metabolic process	1
+GO:0072350	-0.262540908188318	0.0544215981978232	tricarboxylic acid metabolic process	GO:0072521	purine-containing compound metabolic process	3
+GO:0072331	0.342125727670489	-0.299721123191472	signal transduction by p53 class mediator	GO:0006979	response to oxidative stress	3
+GO:0043039	-0.343309670542182	0.0152177527679601	tRNA aminoacylation	GO:0072521	purine-containing compound metabolic process	3
+GO:0031647	0.236291939942714	-0.0670386221549985	regulation of protein stability	GO:0042445	hormone metabolic process	86
+GO:0046519	-0.115477767341457	-0.00649394474586873	sphingoid metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0042590	0.222527449457878	-0.029530666342051	antigen processing and presentation of exogenous peptide antigen via MHC class I	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	5
+GO:0002831	0.332570361572116	-0.258839288943454	regulation of response to biotic stimulus	GO:0006979	response to oxidative stress	0
+GO:0009135	-0.394820292323906	0.0435893491118518	purine nucleoside diphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0009179	-0.394004395854431	0.0436906803664864	purine ribonucleoside diphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0052547	-0.0750411715825778	-0.14058284396687	regulation of peptidase activity	GO:0072521	purine-containing compound metabolic process	1
+GO:0033559	-0.343829021297084	0.0526047075132474	unsaturated fatty acid metabolic process	GO:0072521	purine-containing compound metabolic process	1
+GO:2000278	-0.100729242037245	-0.110192761644813	regulation of DNA biosynthetic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0015931	0.352276845913416	0.437354511451453	nucleobase-containing compound transport	GO:0006839	mitochondrial transport	1
+GO:0045071	0.280495434964386	-0.14649549552535	negative regulation of viral genome replication	GO:0019083	viral transcription	50
+GO:0030330	0.361772520969716	-0.351584319539779	DNA damage response, signal transduction by p53 class mediator	GO:0006979	response to oxidative stress	19
+GO:0006575	-0.0963346575736314	-0.0166194917617306	cellular modified amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	1
+GO:0006635	-0.359083446693708	0.0229811231689004	fatty acid beta-oxidation	GO:0009259	ribonucleotide metabolic process	78
+GO:0019748	0.0202517371940101	0.000459497033861489	secondary metabolic process	GO:0019748	secondary metabolic process	1
+GO:0072527	-0.129617856647421	-0.0236978183431724	pyrimidine-containing compound metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0098656	0.31841786660744	0.369287192937602	anion transmembrane transport	GO:0006839	mitochondrial transport	40
+GO:0006086	-0.409341664989885	0.0366285644940865	acetyl-CoA biosynthetic process from pyruvate	GO:0072521	purine-containing compound metabolic process	6
+GO:1902166	0.421387034387997	-0.442233428626733	negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator	GO:0006979	response to oxidative stress	17
+GO:0010389	0.251824279653238	-0.108308110840375	regulation of G2/M transition of mitotic cell cycle	GO:0044839	cell cycle G2/M phase transition	80
+GO:0006720	-0.0824029492685491	0.00206252706920283	isoprenoid metabolic process	GO:0009259	ribonucleotide metabolic process	2
+GO:0043488	-0.0960678161641447	-0.170088440128755	regulation of mRNA stability	GO:0072521	purine-containing compound metabolic process	125
+GO:2001056	-0.0263719404950065	-0.15766075944051	positive regulation of cysteine-type endopeptidase activity	GO:0072521	purine-containing compound metabolic process	10
+GO:0006470	-0.201737153973302	-0.0110775383296136	protein dephosphorylation	GO:0009259	ribonucleotide metabolic process	173
+GO:0034656	-0.37941120558499	0.0126217796759624	nucleobase-containing small molecule catabolic process	GO:0072521	purine-containing compound metabolic process	15
+GO:0043038	-0.324028589621002	0.0351631629676072	amino acid activation	GO:0072521	purine-containing compound metabolic process	0
+GO:0034976	0.315510006101068	-0.266906369298716	response to endoplasmic reticulum stress	GO:0006979	response to oxidative stress	86
+GO:0022900	-0.0319326357559866	0.00154185949421582	electron transport chain	GO:0009259	ribonucleotide metabolic process	69
+GO:0042572	-0.246473168478965	0.00588275208337593	retinol metabolic process	GO:0009259	ribonucleotide metabolic process	59
+GO:0006418	-0.357593129216911	0.0111711032608561	tRNA aminoacylation for protein translation	GO:0072521	purine-containing compound metabolic process	42
+GO:1902230	0.420263334553035	-0.439997228976743	negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage	GO:0097193	intrinsic apoptotic signaling pathway	15
+GO:0009308	-0.0998871850217369	-0.0193373849526269	amine metabolic process	GO:0072521	purine-containing compound metabolic process	9
+GO:0046031	-0.411124297998867	0.0304201451249403	ADP metabolic process	GO:0009259	ribonucleotide metabolic process	2
+GO:1902229	0.418823324447367	-0.424215961300206	regulation of intrinsic apoptotic signaling pathway in response to DNA damage	GO:0097193	intrinsic apoptotic signaling pathway	0
+GO:0002706	0.267937149273672	-0.119862866095302	regulation of lymphocyte mediated immunity	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	0
+GO:0002479	0.222247293451814	-0.0292006752869982	antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	75
+GO:0006090	-0.319206265207393	0.0578299514139823	pyruvate metabolic process	GO:0072521	purine-containing compound metabolic process	26
+GO:0006790	-0.0616189229377657	0.00306828768054579	sulfur compound metabolic process	GO:0072521	purine-containing compound metabolic process	22
+GO:0097191	0.381788642773449	-0.33990507077227	extrinsic apoptotic signaling pathway	GO:0097193	intrinsic apoptotic signaling pathway	51
+GO:0000302	0.309606359570692	-0.23507016537621	response to reactive oxygen species	GO:0006979	response to oxidative stress	14
+GO:0045047	0.38236005148455	0.522024026485437	protein targeting to ER	GO:0006839	mitochondrial transport	13
+GO:0031146	-0.142516790242862	-0.0619278514664569	SCF-dependent proteasomal ubiquitin-dependent protein catabolic process	GO:0072521	purine-containing compound metabolic process	112
+GO:0006144	-0.354585153904882	0.0275090326635913	purine nucleobase metabolic process	GO:0072521	purine-containing compound metabolic process	6
+GO:0007620	0.191848809958334	0.0137898794535931	copulation	GO:0007620	copulation	2
+GO:0046040	-0.371478122281727	0.0339680554415749	IMP metabolic process	GO:0009259	ribonucleotide metabolic process	4
+GO:1901987	0.255684636206997	-0.116780994925959	regulation of cell cycle phase transition	GO:0044839	cell cycle G2/M phase transition	3
+GO:0070228	0.323576424801062	-0.229314530016575	regulation of lymphocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	1
+GO:0043487	-0.116113827044767	-0.131070852895582	regulation of RNA stability	GO:0072521	purine-containing compound metabolic process	0
+GO:0046942	0.353406770593365	0.438233855370617	carboxylic acid transport	GO:0006839	mitochondrial transport	1
+GO:0006613	0.378812852222047	0.510859327875612	cotranslational protein targeting to membrane	GO:0006839	mitochondrial transport	9
+GO:0046034	-0.00659678499306091	-0.000637989345035287	ATP metabolic process	GO:0072521	purine-containing compound metabolic process	34
+GO:0006403	0.368077447357513	0.481007032830187	RNA localization	GO:0006839	mitochondrial transport	2
+GO:0002822	0.352975493479889	-0.267415291597609	regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	0
+GO:0009166	-0.411035701981977	0.0141251369359674	nucleotide catabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0009066	-0.318197480759842	0.0352782677792959	aspartate family amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0019674	0.0242804036192484	0.000820798233241322	NAD metabolic process	GO:0019748	secondary metabolic process	19
+GO:0071426	0.389724633591528	0.545120654034179	ribonucleoprotein complex export from nucleus	GO:0006839	mitochondrial transport	0
+GO:0002824	0.355902331864481	-0.276395096470792	positive regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	0
+GO:0006614	0.384741314894886	0.526333578595322	SRP-dependent cotranslational protein targeting to membrane	GO:0006839	mitochondrial transport	93
+GO:0071897	-0.169703750035254	-0.0224683313428684	DNA biosynthetic process	GO:0072521	purine-containing compound metabolic process	29
+GO:1901990	0.255372022660949	-0.115764931399959	regulation of mitotic cell cycle phase transition	GO:0044839	cell cycle G2/M phase transition	81
+GO:1903706	0.289044028266703	-0.131550195422133	regulation of hemopoiesis	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	4
+GO:0046939	-0.129770064485868	0.0217262352260557	nucleotide phosphorylation	GO:0009259	ribonucleotide metabolic process	3
+GO:0015980	-0.0406325465124504	0.000875034256320321	energy derivation by oxidation of organic compounds	GO:0009259	ribonucleotide metabolic process	2
+GO:0006195	-0.413692168613161	0.00410637051856353	purine nucleotide catabolic process	GO:0072521	purine-containing compound metabolic process	13
+GO:0070646	-0.118641733989306	-0.050030974228051	protein modification by small protein removal	GO:0072521	purine-containing compound metabolic process	3
+GO:0016579	-0.117763317054362	-0.0498801315554136	protein deubiquitination	GO:0072521	purine-containing compound metabolic process	353
+GO:0019216	-0.0525073810651458	-0.104096033204324	regulation of lipid metabolic process	GO:0009259	ribonucleotide metabolic process	95
+GO:0033540	-0.322048384464425	0.0238283314297283	fatty acid beta-oxidation using acyl-CoA oxidase	GO:0009259	ribonucleotide metabolic process	25
+GO:0043101	-0.206966757616958	-0.00895892238514655	purine-containing compound salvage	GO:0009259	ribonucleotide metabolic process	13
+GO:0043518	0.375031089651308	-0.380175100030788	negative regulation of DNA damage response, signal transduction by p53 class mediator	GO:0006979	response to oxidative stress	16
+GO:0002819	0.353689707806884	-0.268667410605914	regulation of adaptive immune response	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	8
+GO:0000096	-0.32697468097451	0.0369425321758588	sulfur amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	6
+GO:0002821	0.356313982700422	-0.277133566534137	positive regulation of adaptive immune response	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	7
+GO:0006165	-0.396152344002633	0.0439017056149233	nucleoside diphosphate phosphorylation	GO:0009259	ribonucleotide metabolic process	22
+GO:0009113	-0.350076146029545	0.0258468209091283	purine nucleobase biosynthetic process	GO:0072521	purine-containing compound metabolic process	6
+GO:0048863	0.191482888300638	0.00912170125571789	stem cell differentiation	GO:0048863	stem cell differentiation	31
+GO:1901796	0.361731435261329	-0.326839540714103	regulation of signal transduction by p53 class mediator	GO:0006979	response to oxidative stress	131
+GO:0009164	-0.388367697464465	0.00494548037041035	nucleoside catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0045454	0.238693286514309	-0.0813244580352806	cell redox homeostasis	GO:0042445	hormone metabolic process	62
+GO:0070232	0.321154561241863	-0.225110281781021	regulation of T cell apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	3
+GO:0031503	0.364051981116278	0.469409303824194	protein-containing complex localization	GO:0006839	mitochondrial transport	2
+GO:0044106	-0.124146032181487	-0.0243968815410914	cellular amine metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0071166	0.332171315145918	0.405884547390611	ribonucleoprotein complex localization	GO:0006839	mitochondrial transport	1
+GO:0001819	0.0426176364642774	-0.145072761208355	positive regulation of cytokine production	GO:0072521	purine-containing compound metabolic process	26
+GO:0022412	0.192004501870155	0.00799063734018911	cellular process involved in reproduction in multicellular organism	GO:0007620	copulation	0
+GO:0006650	-0.263774236465362	0.0320584987879995	glycerophospholipid metabolic process	GO:0009259	ribonucleotide metabolic process	6
+GO:0015849	0.351823049268749	0.434348246098188	organic acid transport	GO:0006839	mitochondrial transport	0
+GO:0006644	-0.269446144540762	0.0318314928017276	phospholipid metabolic process	GO:0009259	ribonucleotide metabolic process	65
+GO:0098742	0.184319290091949	0.0118770738226773	cell-cell adhesion via plasma-membrane adhesion molecules	GO:0098742	cell-cell adhesion via plasma-membrane adhesion molecules	41
+GO:0006406	0.211730651926874	0.501608675826083	mRNA export from nucleus	GO:0006839	mitochondrial transport	135
+GO:0071427	0.387675699777971	0.540027661572117	mRNA-containing ribonucleoprotein complex export from nucleus	GO:0006839	mitochondrial transport	0
+GO:0006637	-0.419111286304159	0.0310232422424252	acyl-CoA metabolic process	GO:0072521	purine-containing compound metabolic process	48
+GO:0035383	-0.0443751421780398	0.00471330806869166	thioester metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0070231	0.291491124100007	-0.165945583124628	T cell apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	6
+GO:0010821	0.294311917476347	0.00905512335032202	regulation of mitochondrion organization	GO:0042273	ribosomal large subunit biogenesis	26
+GO:0001510	-0.124362865986267	-0.0215865828195598	RNA methylation	GO:0072521	purine-containing compound metabolic process	22
+GO:0090670	0.349875103653989	0.437141241483826	RNA localization to Cajal body	GO:0006839	mitochondrial transport	0
+GO:0090671	0.34905135850147	0.435266065173214	telomerase RNA localization to Cajal body	GO:0006839	mitochondrial transport	2
+GO:0090672	0.347889920505076	0.43221865141539	telomerase RNA localization	GO:0006839	mitochondrial transport	0
+GO:0090685	0.349875103653989	0.437141241483826	RNA localization to nucleus	GO:0006839	mitochondrial transport	0
+GO:0070227	0.29318508220482	-0.168736926932326	lymphocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	0
+GO:0006405	0.378404799265592	0.518794836589361	RNA export from nucleus	GO:0006839	mitochondrial transport	58
+GO:0006775	-0.277213107297673	0.0590907609443713	fat-soluble vitamin metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0051204	0.407040987508351	0.538753323601664	protein insertion into mitochondrial membrane	GO:0006839	mitochondrial transport	2
+GO:0042552	0.194428319502515	0.00658094230176408	myelination	GO:0048863	stem cell differentiation	51
+GO:0050852	0.363945194195605	-0.299369460095574	T cell receptor signaling pathway	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	197
+GO:0009062	-0.366532077489091	0.0225512646167836	fatty acid catabolic process	GO:0072521	purine-containing compound metabolic process	14
+GO:1990748	0.282664086127079	-0.180840483023455	cellular detoxification	GO:0006979	response to oxidative stress	2
+GO:0031349	0.372355877545684	-0.350322974115262	positive regulation of defense response	GO:0006979	response to oxidative stress	0
+GO:0070202	0.393158334270697	0.357638202922452	regulation of establishment of protein localization to chromosome	GO:0006839	mitochondrial transport	2
+GO:0002699	0.279356264943669	-0.141156493010195	positive regulation of immune effector process	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	0
+GO:0045333	-0.0349781360721372	0.00121800968322247	cellular respiration	GO:0009259	ribonucleotide metabolic process	18
+GO:0006734	0.0265449658690576	0.000992719576613112	NADH metabolic process	GO:0006734	NADH metabolic process	7
+GO:0035337	-0.395018152539359	0.0327352632512557	fatty-acyl-CoA metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0009163	-0.378441202821169	0.0284476397962685	nucleoside biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:1901068	-0.375585348569557	0.029069446593999	guanosine-containing compound metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0000715	0.0780146137367205	-0.180643730101042	nucleotide-excision repair, DNA damage recognition	GO:0006979	response to oxidative stress	25
+GO:1902254	0.40327891972684	-0.394717858417477	negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator	GO:0006979	response to oxidative stress	6
+GO:0006310	-0.143482450895998	-0.0270227332312955	DNA recombination	GO:0072521	purine-containing compound metabolic process	69
+GO:0030433	-0.00733446603479015	-0.302671298141726	ubiquitin-dependent ERAD pathway	GO:0006979	response to oxidative stress	109
+GO:0009144	-0.388133039071103	0.0432092504217631	purine nucleoside triphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0048515	0.200449531847796	0.00702618932363694	spermatid differentiation	GO:0007620	copulation	6
+GO:0098869	0.281940465804332	-0.179471600575829	cellular oxidant detoxification	GO:0006979	response to oxidative stress	79
+GO:0055067	0.236828586705394	-0.0658948453374293	monovalent inorganic cation homeostasis	GO:0042445	hormone metabolic process	0
+GO:0006536	-0.307243644833652	0.0358550256537475	glutamate metabolic process	GO:0072521	purine-containing compound metabolic process	16
+GO:0042573	-0.249144142043121	0.00749324551731809	retinoic acid metabolic process	GO:0042445	hormone metabolic process	25
+GO:0009065	-0.330281742071095	0.010363141363276	glutamine family amino acid catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:2000108	0.330526460658966	-0.240843622937595	positive regulation of leukocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	1
+GO:0009141	-0.39576009239778	0.0428635206643309	nucleoside triphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0033865	-0.402066047992348	0.043998502113361	nucleoside bisphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0033875	-0.402066047992348	0.043998502113361	ribonucleoside bisphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0034032	-0.416801324510804	0.0296683393623552	purine nucleoside bisphosphate metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0098754	0.273996015057875	-0.158311808329722	detoxification	GO:0006979	response to oxidative stress	0
+GO:0006721	-0.0801793197207779	0.00208475384749945	terpenoid metabolic process	GO:0009259	ribonucleotide metabolic process	0
+GO:0072599	0.370646393467357	0.490387856482275	establishment of protein localization to endoplasmic reticulum	GO:0006839	mitochondrial transport	1
+GO:1901617	-0.105099917108913	0.00806777835616953	organic hydroxy compound biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0051205	0.382564593119297	0.483479453763989	protein insertion into membrane	GO:0006839	mitochondrial transport	12
+GO:1903900	0.268829007956701	-0.104065061453599	regulation of viral life cycle	GO:0019083	viral transcription	2
+GO:0006521	-0.267341520976275	-0.0546888306241161	regulation of cellular amino acid metabolic process	GO:0072521	purine-containing compound metabolic process	51
+GO:0043473	0.184157752522889	0.013292008268161	pigmentation	GO:0043473	pigmentation	26
+GO:1990928	0.289965314005213	-0.202048544471433	response to amino acid starvation	GO:0006979	response to oxidative stress	3
+GO:0031343	0.240859659524628	-0.104533612354582	positive regulation of cell killing	GO:0031343	positive regulation of cell killing	0
+GO:0051053	-0.0455067215418591	-0.164634218248804	negative regulation of DNA metabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0007286	0.200913883816928	0.00695261937771272	spermatid development	GO:0007620	copulation	89
+GO:0061013	-0.115536943454884	-0.173504885758153	regulation of mRNA catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0002367	0.106530897381809	-0.172931466017696	cytokine production involved in immune response	GO:0072521	purine-containing compound metabolic process	5
+GO:0048525	0.282978098891582	-0.152618464210875	negative regulation of viral process	GO:0019083	viral transcription	6
+GO:0007272	0.194461767753012	0.00659717861353173	ensheathment of neurons	GO:0048863	stem cell differentiation	0
+GO:0008366	0.194461767753012	0.00659717861353173	axon ensheathment	GO:0048863	stem cell differentiation	6
+GO:0002526	0.292658855206542	-0.208767908061557	acute inflammatory response	GO:0006979	response to oxidative stress	13
+GO:2000736	0.242256081970745	-0.084360229925259	regulation of stem cell differentiation	GO:0048863	stem cell differentiation	7
+GO:0048002	0.224496982405924	-0.0320824502989776	antigen processing and presentation of peptide antigen	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	3
+GO:0000077	0.353708790004265	-0.333561606752333	DNA damage checkpoint	GO:0044839	cell cycle G2/M phase transition	39
+GO:0010212	0.262031827377481	-0.136264236500175	response to ionizing radiation	GO:0006979	response to oxidative stress	47
+GO:0046148	0.0134698193524116	0.000993552096645352	pigment biosynthetic process	GO:0019748	secondary metabolic process	0
+GO:0061418	0.0175150861544918	-0.285960754217288	regulation of transcription from RNA polymerase II promoter in response to hypoxia	GO:0006979	response to oxidative stress	71
+GO:0043618	-0.000687415952201688	-0.277542874924777	regulation of transcription from RNA polymerase II promoter in response to stress	GO:0006979	response to oxidative stress	3
+GO:0032496	0.317152872362568	-0.197044001093857	response to lipopolysaccharide	GO:0006979	response to oxidative stress	144
+GO:0006757	-0.412329056553278	0.0308551570101516	ATP generation from ADP	GO:0009259	ribonucleotide metabolic process	2
+GO:0042180	-0.311413602669496	0.0532892943822365	cellular ketone metabolic process	GO:0072521	purine-containing compound metabolic process	3
+GO:0007156	0.184454612395787	0.0119810806404531	homophilic cell adhesion via plasma membrane adhesion molecules	GO:0098742	cell-cell adhesion via plasma-membrane adhesion molecules	178
+GO:0051702	0.222218915546364	-0.0171076907529836	interaction with symbiont	GO:0019083	viral transcription	5
+GO:0044706	0.197286084645156	0.00791265291167711	multi-multicellular organism process	GO:0007620	copulation	0
+GO:0030488	-0.117332540545024	-0.0184165435161567	tRNA methylation	GO:0072521	purine-containing compound metabolic process	36
+GO:0031570	0.267100062693844	-0.159451835117189	DNA integrity checkpoint	GO:0044839	cell cycle G2/M phase transition	0
+GO:0036503	-0.0129890410083644	-0.310146043918209	ERAD pathway	GO:0006979	response to oxidative stress	20
+GO:0006633	-0.364560143117762	0.0484565018779797	fatty acid biosynthetic process	GO:0072521	purine-containing compound metabolic process	56
+GO:0033209	0.315339183264125	-0.245418759749392	tumor necrosis factor-mediated signaling pathway	GO:0006979	response to oxidative stress	138
+GO:0030148	-0.195741713158629	-0.00537929522096663	sphingolipid biosynthetic process	GO:0009259	ribonucleotide metabolic process	63
+GO:0090150	0.374997544515762	0.499657980902624	establishment of protein localization to membrane	GO:0006839	mitochondrial transport	9
+GO:0044242	-0.147525005599973	-0.0264575910851891	cellular lipid catabolic process	GO:0009259	ribonucleotide metabolic process	4
+GO:0051169	0.354063284298383	0.456423040354849	nuclear transport	GO:0006839	mitochondrial transport	3
+GO:0030004	0.225265673943116	-0.0521520700308877	cellular monovalent inorganic cation homeostasis	GO:0042445	hormone metabolic process	0
+GO:0046112	-0.347528089532739	0.0250383712233041	nucleobase biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0070230	0.327933722336626	-0.236049031090379	positive regulation of lymphocyte apoptotic process	GO:0097193	intrinsic apoptotic signaling pathway	1
+GO:0071786	0.225661077995743	0.0862195370675226	endoplasmic reticulum tubular network organization	GO:0042273	ribosomal large subunit biogenesis	13
+GO:1904872	0.385243051435328	0.354092844132863	regulation of telomerase RNA localization to Cajal body	GO:0006839	mitochondrial transport	4
+GO:0048511	0.181027230360913	0.0129169003019655	rhythmic process	GO:0048511	rhythmic process	66
+GO:0016236	-0.0918971348238128	-0.030563416941102	macroautophagy	GO:0072521	purine-containing compound metabolic process	115
+GO:0046173	-0.31271370883216	0.0531317611567594	polyol biosynthetic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0006007	-0.306708164612521	0.0182737892153527	glucose catabolic process	GO:0072521	purine-containing compound metabolic process	7
+GO:0050931	0.192351854306473	0.0107771320696058	pigment cell differentiation	GO:0043473	pigmentation	0
+GO:0009411	0.261921086771919	-0.136024637690637	response to UV	GO:0006979	response to oxidative stress	47
+GO:0006643	-0.0939704279094491	0.00139135665506925	membrane lipid metabolic process	GO:0009259	ribonucleotide metabolic process	3
+GO:1901292	-0.414059097447274	0.0137443869655001	nucleoside phosphate catabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0051054	-0.0594814952531901	-0.140629234673509	positive regulation of DNA metabolic process	GO:0072521	purine-containing compound metabolic process	2
+GO:0000038	-0.308752375831108	0.0516693832191565	very long-chain fatty acid metabolic process	GO:0072521	purine-containing compound metabolic process	19
+GO:0006099	-0.0237227561111248	-0.000184298032230884	tricarboxylic acid cycle	GO:0009259	ribonucleotide metabolic process	60
+GO:0043094	-0.00277497332215245	-0.000540147850382124	cellular metabolic compound salvage	GO:0009259	ribonucleotide metabolic process	0
+GO:0034113	0.185070014558544	0.0114676274817478	heterotypic cell-cell adhesion	GO:0098742	cell-cell adhesion via plasma-membrane adhesion molecules	33
+GO:0046949	-0.395871192621613	0.0311558010621263	fatty-acyl-CoA biosynthetic process	GO:0009259	ribonucleotide metabolic process	12
+GO:0042454	-0.378724976292446	0.00557277048783035	ribonucleoside catabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0001844	0.565432222731931	0.194501527045049	protein insertion into mitochondrial membrane involved in apoptotic signaling pathway	GO:0006839	mitochondrial transport	6
+GO:0062012	-0.277290860458246	-0.0419158011147482	regulation of small molecule metabolic process	GO:0072521	purine-containing compound metabolic process	0
+GO:0002181	-0.175002869349066	-0.0202432877788066	cytoplasmic translation	GO:0072521	purine-containing compound metabolic process	47
+GO:0008630	0.408942821327684	-0.408452388484591	intrinsic apoptotic signaling pathway in response to DNA damage	GO:0097193	intrinsic apoptotic signaling pathway	48
+GO:0031579	0.235539560149171	0.101272471407354	membrane raft organization	GO:0042273	ribosomal large subunit biogenesis	5
+GO:0034114	0.231593129394553	-0.0735294949887276	regulation of heterotypic cell-cell adhesion	GO:0098742	cell-cell adhesion via plasma-membrane adhesion molecules	0
+GO:1900739	0.585355231220843	0.15614658469151	regulation of protein insertion into mitochondrial membrane involved in apoptotic signaling pathway	GO:0006839	mitochondrial transport	0
+GO:1900740	0.591505082573245	0.14019537737234	positive regulation of protein insertion into mitochondrial membrane involved in apoptotic signaling pathway	GO:0006839	mitochondrial transport	26
+GO:1905523	0.367364148282229	0.122284795585099	positive regulation of macrophage migration	GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	1
+GO:0090151	0.392938238863563	0.502422749123915	establishment of protein localization to mitochondrial membrane	GO:0006839	mitochondrial transport	1

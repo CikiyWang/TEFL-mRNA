@@ -1,0 +1,4 @@
+region	n_pairs	n_unique_snvs	n_label
+5'UTR	147520	85297	85297
+CDS	8287	5512	5570
+3'UTR	2	2	2

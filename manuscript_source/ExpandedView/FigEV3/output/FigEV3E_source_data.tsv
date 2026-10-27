@@ -1,0 +1,17 @@
+a	b	rho
+dpte	dpte	1
+dpte	ordinal	0.911557698093303
+dpte	our_reg	0.607686017663371
+dpte	ribonn	0.47270472137172
+ordinal	dpte	0.911557698093303
+ordinal	ordinal	1
+ordinal	our_reg	0.68846292537547
+ordinal	ribonn	0.543692880915513
+our_reg	dpte	0.607686017663371
+our_reg	ordinal	0.68846292537547
+our_reg	our_reg	1
+our_reg	ribonn	0.527285474226723
+ribonn	dpte	0.47270472137172
+ribonn	ordinal	0.543692880915513
+ribonn	our_reg	0.527285474226723
+ribonn	ribonn	1

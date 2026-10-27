@@ -1,0 +1,5 @@
+count	delta_TE_class	SNVs_codon_class
+3721	up-regulated	optimal
+15498	up-regulated	non-optimal
+7805	down-regulated	optimal
+6122	down-regulated	non-optimal

@@ -1,0 +1,2 @@
+filter_mean	filter_sd	nofilter_mean	nofilter_sd	folds_filter_better	n_transcripts	wilcoxon_p
+0.870884745689733	0.0345899765684908	0.8498254649940368	0.04372512227154599	8	1754	0.01953125

@@ -1,0 +1,4 @@
+panel	estimate	spearman_vs_te_ratio	consensus_class_agreement_pct	highlow_reversal_pct	highlow_reversals	tertile_class_agreement_pct	spearman_vs_rna_tpm
+D, E	te_compositional	0.9837110600353977	99.79787771601819	0.0	0 of 1250	97.06922688226378	-0.09178515341086711
+F, G	te_regression	0.963964549834027	99.09044972208186	0.0	0 of 1250	88.17584638706417	0.047507289491047676
+H	te_ratio	1.0					-0.10440400197865964

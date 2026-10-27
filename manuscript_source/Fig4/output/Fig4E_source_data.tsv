@@ -1,0 +1,21 @@
+delta_score	Region	Var_id	seq_id	pos	Gene	ref2alt	clinvar_id	ClinVar_CLNDN	Name
+-0.375857237990265	5'UTR	NM_001243785_A_C_12	NM_001243785	12	RAG2	A > C	304562	Histiocytic_medullary_reticulosis|Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-positive	RAG2@NM_001243785@A > C@12
+-0.324667408504334	5'UTR	NM_001243786_A_C_12	NM_001243786	12	RAG2	A > C	304562	Histiocytic_medullary_reticulosis|Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-positive	RAG2@NM_001243786@A > C@12
+0.177320351544571	5'UTR	NM_001080124_C_A_99	NM_001080124	99	CASP8	C > A	897522	Autoimmune_lymphoproliferative_syndrome_type_2B	CASP8@NM_001080124@C > A@99
+0.166512556510544	5'UTR	NM_002485_G_A_81	NM_002485	81	NBN	G > A	182712	not_specified|Microcephaly,_normal_intelligence_and_immunodeficiency|Hereditary_cancer-predisposing_syndrome	NBN@NM_002485@G > A@81
+0.164111086547852	5'UTR	NM_001379095_C_T_79	NM_001379095	79	LIG4	C > T	311002	DNA_ligase_IV_deficiency|Severe_combined_immunodeficiency_due_to_DCLRE1C_deficiency	LIG4@NM_001379095@C > T@79
+0.139247856510544	5'UTR	NM_002485_C_A_105	NM_002485	105	NBN	C > A	142021	Microcephaly,_normal_intelligence_and_immunodeficiency|Hereditary_cancer-predisposing_syndrome|not_specified|not_provided	NBN@NM_002485@C > A@105
+-0.104097578504334	5'UTR	NM_001243786_G_T_17	NM_001243786	17	RAG2	G > T	879888	Severe_combined_immunodeficiency,_autosomal_recessive,_T_cell-negative,_B_cell-negative,_NK_cell-positive|Histiocytic_medullary_reticulosis	RAG2@NM_001243786@G > T@17
+0.101568472175961	5'UTR	NM_020529_C_A_33	NM_020529	33	NFKBIA	C > A	883038	Ectodermal_dysplasia_and_immunodeficiency_2	NFKBIA@NM_020529@C > A@33
+0.0949336618435097	5'UTR	NM_203447_G_T_8	NM_203447	8	DOCK8	G > T	366223	Combined_immunodeficiency_due_to_DOCK8_deficiency	DOCK8@NM_203447@G > T@8
+0.0930500165786743	5'UTR	NM_000073_G_T_64	NM_000073	64	CD3G	G > T	302679	Combined_immunodeficiency_due_to_CD3gamma_deficiency	CD3G@NM_000073@G > T@64
+-0.173496214605713	CDS	NM_152872_T_A_112	NM_152872	112	FAS	T > A	301523	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_152872@T > A@112
+-0.11769196155777	CDS	NM_001320619_T_A_112	NM_001320619	112	FAS	T > A	301523	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_001320619@T > A@112
+-0.106902744605713	CDS	NM_152872_T_C_112	NM_152872	112	FAS	T > C	2025749	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_152872@T > C@112
+-0.0880961633674622	CDS	NM_152871_T_A_112	NM_152871	112	FAS	T > A	301523	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_152871@T > A@112
+-0.0876034035179139	CDS	NM_000043_T_A_112	NM_000043	112	FAS	T > A	301523	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_000043@T > A@112
+0.0865077565105439	CDS	NM_002485_C_T_169	NM_002485	169	NBN	C > T	421940	Microcephaly,_normal_intelligence_and_immunodeficiency|Hereditary_cancer-predisposing_syndrome|not_specified	NBN@NM_002485@C > T@169
+0.0819984837110519	CDS	NM_001611_G_A_71	NM_001611	71	ACP5	G > A	2078904	Spondyloenchondrodysplasia_with_immune_dysregulation	ACP5@NM_001611@G > A@71
+-0.0819228546057129	CDS	NM_152872_T_C_145	NM_152872	145	FAS	T > C	2983914	Autoimmune_lymphoproliferative_syndrome_type_1	FAS@NM_152872@T > C@145
+0.0785459565105439	CDS	NM_002485_G_A_208	NM_002485	208	NBN	G > A	183697	Microcephaly,_normal_intelligence_and_immunodeficiency|not_specified|Acute_lymphoid_leukemia|Hereditary_cancer-predisposing_syndrome|Hereditary_breast_ovarian_cancer_syndrome|not_provided	NBN@NM_002485@G > A@208
+-0.0720181434213257	CDS	NM_000073_A_G_191	NM_000073	191	CD3G	A > G	2163727	Combined_immunodeficiency_due_to_CD3gamma_deficiency	CD3G@NM_000073@A > G@191

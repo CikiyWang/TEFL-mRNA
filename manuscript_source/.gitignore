@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+Rplots.pdf
+
+# data archive (Zenodo); download with shared/scripts/download_large_data.sh
+shared/input/gnomAD_v4_5UTR_SNVs_dpTE.tsv.gz
+shared/input/gnomAD_v4_3UTR_SNVs_dpTE.tsv.gz
+shared/input/gnomAD_v4_synonymous_SNVs_dpTE.tsv.gz
+shared/input/gnomAD_v4_missense_SNVs_dpTE.tsv.gz
+shared/input/RefSeq_mRNA_sequences.tsv.gz
+shared/input/RefSeq_mRNA_sequences_RiboNN_input.tsv.gz
+Fig5/input/ExAC_missense_SNVs_dpTE_9_cell_lines.tsv.gz
+Fig5/input/ExAC_synonymous_SNVs_dpTE_9_cell_lines.tsv.gz
+Fig5/input/ExAC_3UTR_SNVs_dpTE_9_cell_lines.tsv.gz
+ExpandedView/FigEV4/input/gnomAD_v4_SNVs_dpTE_start_stop_1kb.tsv.gz
+
+# intermediates that the analysis scripts write for the plot scripts
+**/output/*.rds
+**/output/*.png
