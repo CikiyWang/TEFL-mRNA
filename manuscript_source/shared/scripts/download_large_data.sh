@@ -7,7 +7,7 @@
 #   bash shared/scripts/download_large_data.sh Fig5     # only the files whose path starts with Fig5
 set -euo pipefail
 
-RECORD="XXXXXXX"   # Zenodo record of the data archive (DOI 10.5281/zenodo.XXXXXXX)
+RECORD="23681944"   # Zenodo record of the data archive (DOI 10.5281/zenodo.23681944)
 LIST="shared/large_data_files.tsv"
 PREFIX="${1:-}"
 
