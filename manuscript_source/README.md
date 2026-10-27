@@ -45,7 +45,7 @@ python3 -m pip install -r shared/environment/python_requirements.txt
 
 ## Data
 
-Most inputs are included in the `input/` folders. Ten large files (2.6 GB) are deposited in a data archive (Zenodo, DOI: 10.5281/zenodo.XXXXXXX) and are placed at their paths in this layout by
+Most inputs are included in the `input/` folders. Ten large files (2.6 GB) are deposited in a data archive (Zenodo, DOI: https://doi.org/10.5281/zenodo.23681944) and are placed at their paths in this layout by
 
 ```bash
 bash shared/scripts/download_large_data.sh
